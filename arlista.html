@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Árlista | HARMAT BEAUTY by Petra</title>
+<meta name="description" content="Harmat Beauty by Petra - Kozmetikai árlista: tisztító arckezelések, anti-aging, bőrmegújítás, gyantázás és smink szolgáltatások árai.">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Montserrat:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- FontAwesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- Stylesheet -->
+<link rel="stylesheet" href="styles.css">
+<style>
+/* Page-specific sub-page styling */
+.page-hero {
+    padding: calc(var(--header-height) + 3.5rem) 2rem 4rem;
+    text-align: center;
+    background: radial-gradient(circle at 50% 50%, rgba(26, 54, 43, 0.75) 0%, var(--bg-primary) 80%);
+    position: relative;
+}
+
+.page-hero-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 700;
+    color: #e5dfd3;
+    margin-bottom: 1rem;
+}
+
+.page-hero-subtitle {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    max-width: 680px;
+    margin: 0 auto 1.8rem auto;
+    line-height: 1.7;
+}
+
+.category-nav-bar {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.cat-nav-btn {
+    padding: 0.55rem 1.1rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+    color: #e5dfd3;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: var(--transition-fast);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cat-nav-btn:hover {
+    background: #e5dfd3;
+    color: var(--bg-primary);
+    transform: translateY(-2px);
+}
+
+.arlista-page-section {
+    padding: 5rem 0 6rem;
+    background-color: #F4E5DC;
+}
+</style>
+</head>
+<body>
+<!-- Header / Navbar -->
+<header class="site-header scrolled" id="navbar">
+<div class="container header-container">
+<a href="index.html#home" class="brand-logo">
+  <span class="logo-harmat">HARMAT</span>
+  <span class="logo-beauty">BEAUTY</span>
+  <span class="logo-by-petra">by Petra</span>
+</a>
+<button class="mobile-menu-toggle" id="menuToggle" aria-label="Menü megnyitása">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav class="nav-menu" id="navMenu">
+<ul class="nav-links">
+<li><a href="index.html#home" class="nav-link" data-i18n="nav_home">Home</a></li>
+<li><a href="index.html#szalon" class="nav-link" data-i18n="nav_salon">A szalon</a></li>
+<li><a href="kezelesek.html" class="nav-link" data-i18n="nav_treatments">Kezelések</a></li>
+<li><a href="arlista.html" class="nav-link active" data-i18n="nav_prices">Árlista</a></li>
+<li><a href="idopontfoglalas.html" class="nav-link" data-i18n="nav_booking">Időpontfoglalás</a></li>
+<li><a href="index.html#rolam" class="nav-link" data-i18n="nav_about">Rólam</a></li>
+<li><a href="index.html#kapcsolat" class="nav-link" data-i18n="nav_contact">Kapcsolat</a></li>
+</ul>
+<div class="nav-socials">
+<button type="button" class="lang-switch-btn" id="langSwitchBtn" onclick="toggleLanguage()" aria-label="Nyelvváltás / Switch Language">
+<i class="fa-solid fa-globe"></i>
+<span id="langBtnText">EN</span>
+</button>
+<a href="https://www.facebook.com/profile.php?id=100063218832190" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="https://www.instagram.com/harmat_beauty/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+</div>
+</nav>
+</div>
+</header>
+
+<main>
+<!-- Page Hero Banner -->
+<section class="page-hero">
+<div class="container">
+<h1 class="page-hero-title" data-i18n="price_hero_title">Árlista</h1>
+<div class="category-nav-bar">
+<a href="#alap-tisztito" class="cat-nav-btn"><i class="fa-solid fa-leaf"></i> <span data-i18n="price_nav_cat1">Alap & Mélytisztítás</span></a>
+<a href="#premium-antiaging" class="cat-nav-btn"><i class="fa-solid fa-crown"></i> <span data-i18n="price_nav_cat2">Healthy Aging & Anti-Aging</span></a>
+<a href="#kiegeszito-gyantazas" class="cat-nav-btn"><i class="fa-solid fa-sparkles"></i> <span data-i18n="price_nav_cat3">Kiegészítő & Gyantázás</span></a>
+<a href="#smink" class="cat-nav-btn"><i class="fa-solid fa-paintbrush"></i> <span data-i18n="price_nav_cat4">Smink</span></a>
+<a href="index.html" class="cat-nav-btn" style="background:#e5dfd3; color:#142820;"><i class="fa-solid fa-arrow-left"></i> <span data-i18n="price_nav_back">Vissza a főoldalra</span></a>
+</div>
+</div>
+<!-- Wave Transition to Content (#F4E5DC) -->
+<div class="wave-divider wave-bottom">
+<svg viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
+<path class="wave-fill-price" d="M0,45 C320,10 640,75 1080,45 C1260,30 1380,55 1440,60 L1440,100 L0,100 Z"></path>
+<path class="wave-stroke-price" d="M0,45 C320,10 640,75 1080,45 C1260,30 1380,55 1440,60"></path>
+</svg>
+</div>
+</section>
+
+<!-- Árlista Details Section -->
+<section class="section price-section arlista-page-section">
+<div class="container">
+<div class="price-tables-wrapper">
+<!-- Category 1 -->
+<div class="price-category-card" id="alap-tisztito">
+<div class="price-category-header">
+<i class="fa-solid fa-leaf"></i>
+<h3 data-i18n="price_cat1_title">Alap- és Mélytisztító Kezelések</h3>
+</div>
+<div class="price-items-list">
+<div class="price-item">
+<div class="price-item-info">
+<span class="price-item-name" data-i18n="price_i1_name">Tini / Mélytisztító arckezelés</span>
+<span class="price-item-desc" data-i18n="price_i1_desc">Letisztítás, peeling, gőzölés, tisztítás, fertőtlenítés, maszk</span>
+</div>
+<span class="price-item-duration">60 perc</span>
+<span class="price-item-val">15 500 Ft</span>
+</div>
+<div class="price-item">
+<div class="price-item-info">
+<span class="price-item-name" data-i18n="price_i2_name">Komplett nagykezelés masszázzsal</span>
+<span class="price-item-desc" data-i18n="price_i2_desc">Teljes körű tisztítás + 25 perces relaxáló arc- és dekoltázsmasszázs</span>
+</div>
+<span class="price-item-duration">90 perc</span>
+<span class="price-item-val">19 500 Ft</span>
+</div>
+<div class="price-item">
+<div class="price-item-info">
+<span class="price-item-name" data-i18n="price_i3_name">Hát tisztító kezelés</span>
+<span class="price-item-desc" data-i18n="price_i3_desc">Problémás bőrfelület mélytisztítása, fertőtlenítés, pórusösszehúzás</span>
+</div>
+<span class="price-item-duration">60 perc</span>
+<span class="price-item-val">14 000 Ft</span>
+</div>
+</div>
+</div>
+
+<!-- Category 2 -->
+<div class="price-category-card" id="premium-antiaging">
+<div class="price-category-header">
+<i class="fa-solid fa-crown"></i>
+<h3 data-i18n="price_cat2_title">Prémium Anti-Aging & Bőrmegújítás</h3>
+</div>
+<div class="price-items-list">
+<div class="price-item">
+<div class="price-item-info">
+<span class="price-item-name" data-i18n="price_i4_name">Pure Glow Lifting Kezelés</span>
+<span class="price-item-desc" data-i18n="price_i4_desc">Peptides komplex, ultrahang, hyaluron szérum & myofasciális masszázs</span>
+</div>
+<span class="price-item-duration">90 perc</span>
+<span class="price-item-val">26 000 Ft</span>
+</div>
+<div class="price-item">
+<div class="price-item-info">
+<span class="price-item-name" data-i18n="price_i5_name">Hydro-Boost Mélyhidratálás</span>
+<span class="price-item-desc" data-i18n="price_i5_desc">Azonnali hidratáltság és bőrbarrier erősítés multi-hyaluronnal</span>
+</div>
+<span class="price-item-duration">60 perc</span>
+<span class="price-item-val">16 000 Ft</span>
+</div>
+<div class="price-item">
+<div class="price-item-info">
+<span class="price-item-name" data-i18n="price_i6_name">Kémiai Peeling / Savkúra (AHA/BHA)</span>
+<span class="price-item-desc" data-i18n="price_i6_desc">Bőrmegújító, pigmentfolt-halványító és textúra-egyenletesítő kúra</span>
+</div>
+<span class="price-item-duration">50 perc</span>
+<span class="price-item-val">17 500 Ft</span>
+</div>
+<div class="price-item">
+<div class="price-item-info">
+<span class="price-item-name" data-i18n="price_i7_name">Kollagén Indukciós Rituálé</span>
+<span class="price-item-desc" data-i18n="price_i7_desc">Rugalmasság fokozó koncentrátumok, arany maszk, dekoltázsápolás</span>
+</div>
+<span class="price-item-duration">75 perc</span>
+<span class="price-item-val">22 000 Ft</span>
+</div>
+</div>
+</div>
+
+<!-- Category 3 -->
+<div class="price-category-card" id="kiegeszito-gyantazas">
+<div class="price-category-header">
+<i class="fa-solid fa-sparkles"></i>
+<h3 data-i18n="price_cat3_title">Kiegészítő Szolgáltatások & Gyantázás</h3>
+</div>
+<div class="price-items-list">
+<div class="price-item">
+<div class="price-item-info">
+<span class="price-item-name" data-i18n="price_i8_name">Szemöldök szedés + festés</span>
+<span class="price-item-desc" data-i18n="price_i8_desc">Egyéni karakterhez igazított formázás és tartós színezés</span>
+</div>
+<span class="price-item-duration">30 perc</span>
+<span class="price-item-val">4 500 Ft</span>
+</div>
+<div class="price-item">
+<div class="price-item-info">
+<span class="price-item-name" data-i18n="price_i9_name">Szempilla festés</span>
+<span class="price-item-desc" data-i18n="price_i9_desc">Mélyfekete vagy kékesfekete tartós pillaszínezés</span>
+</div>
+<span class="price-item-duration">20 perc</span>
+<span class="price-item-val">3 500 Ft</span>
+</div>
+<div class="price-item">
+<div class="price-item-info">
+<span class="price-item-name" data-i18n="price_i10_name">Arcgyanta csomag (bajusz, áll, szemöldök)</span>
+<span class="price-item-desc" data-i18n="price_i10_desc">Kíméletes, prémium elasztikus gyantával</span>
+</div>
+<span class="price-item-duration">30 perc</span>
+<span class="price-item-val">6 000 Ft</span>
+</div>
+<div class="price-item">
+<div class="price-item-info">
+<span class="price-item-name" data-i18n="price_i11_name">Arc-, nyak- és dekoltázsmasszázs önállóan</span>
+<span class="price-item-desc" data-i18n="price_i11_desc">30 perces relaxáló és vérkeringést serkentő masszázs</span>
+</div>
+<span class="price-item-duration">35 perc</span>
+<span class="price-item-val">9 500 Ft</span>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Category 4 -->
+<div class="price-category-card" id="smink">
+<div class="price-category-header">
+<i class="fa-solid fa-paintbrush"></i>
+<h3 data-i18n="price_cat4_title">Smink</h3>
+</div>
+<div class="price-items-list">
+<div class="price-item">
+<div class="price-item-info">
+<span class="price-item-name" data-i18n="price_i12_name">Nappali / Natúr "No-Makeup" Smink</span>
+<span class="price-item-desc" data-i18n="price_i12_desc">Friss, természetes és láthatatlan alapozás, finom árnyalás és ragyogó arcszín</span>
+</div>
+<span class="price-item-duration">45 perc</span>
+<span class="price-item-val">12 000 Ft</span>
+</div>
+<div class="price-item">
+<div class="price-item-info">
+<span class="price-item-name" data-i18n="price_i13_name">Alkalmi & Esti Smink</span>
+<span class="price-item-desc" data-i18n="price_i13_desc">Tartós, kifejező smink fotózásra, eseményekre és ünnepekre műszempilla opcióval</span>
+</div>
+<span class="price-item-duration">60 perc</span>
+<span class="price-item-val">18 000 Ft</span>
+</div>
+<div class="price-item">
+<div class="price-item-info">
+<span class="price-item-name" data-i18n="price_i14_name">Menyasszonyi Smink (próbával)</span>
+<span class="price-item-desc" data-i18n="price_i14_desc">Személyre szabott esküvői smink előzetes konzultációval és próbasminkkel</span>
+</div>
+<span class="price-item-duration">90 perc</span>
+<span class="price-item-val">32 000 Ft</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="price-note-box">
+<i class="fa-solid fa-circle-info"></i>
+<p data-i18n="price_note">Az árak forintban (HUF) értendők és az ÁFÁ-t tartalmazzák. Fizetési lehetőségek a szalonban: Készpénz, Bankkártya, Azonnali Átutalás.</p>
+</div>
+
+<div style="text-align: center; margin-top: 3rem;">
+<a href="idopontfoglalas.html" class="btn btn-primary" style="padding: 0.9rem 2.2rem; font-size: 1rem;">
+<i class="fa-regular fa-calendar-check"></i> <span data-i18n="price_btn_book_now">Időpontfoglalás most</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+<div class="container footer-container">
+<div class="footer-brand">
+<div class="footer-logo">HARMAT BEAUTY</div>
+<p class="footer-sub" data-i18n="footer_sub">by Petra — A szépség egyensúlya</p>
+</div>
+<div class="footer-socials">
+<a href="https://www.facebook.com/profile.php?id=100063218832190" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="https://www.instagram.com/harmat_beauty/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+</div>
+<!-- Footer legal toggles -->
+<div class="footer-legal-row">
+<div class="footer-impresszum">
+<button class="impresszum-toggle" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">
+    Impresszum <i class="fa-solid fa-chevron-down"></i>
+</button>
+<div class="impresszum-body">
+    <h4>Impresszum</h4>
+    <p><strong>A honlap neve:</strong> HARMAT BEAUTY by Petra</p>
+    <p><strong>A honlap címe:</strong> www.harmatbeautybypetra.hu</p>
+    <p><strong>A honlap üzemeltetője:</strong> Solti-Porszász Petra egyéni vállalkozó</p>
+    <p><strong>Székhely:</strong> 1183 Budapest Teleki utca 73b</p>
+    <p><strong>A kozmetika címe:</strong> [a vendégeket fogadó hely címe]</p>
+    <p><strong>E-mail:</strong> <a href="mailto:harmatbeautypetra@gmail.com">harmatbeautypetra@gmail.com</a></p>
+    <p><strong>Telefon:</strong> <a href="tel:+36308179093">+36 30 817 9093</a></p>
+    <p><strong>Nyilvántartási szám:</strong> [egyéni vállalkozói nyilvántartási szám]</p>
+    <p><strong>Nyilvántartást vezető hatóság:</strong> [hatóság neve]</p>
+    <p><strong>Adószám:</strong> [adószám]</p>
+</div>
+</div>
+<div class="footer-impresszum">
+<button class="impresszum-toggle" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">
+    Foglalási &amp; lemondási feltételek <i class="fa-solid fa-chevron-down"></i>
+</button>
+<div class="impresszum-body">
+    <h4>Foglalási és lemondási feltételek</h4>
+    <p><strong>Időpontfoglalás</strong></p>
+    <p>Kezelésre a foglaló alkalmazáson keresztül tudsz időpontot kérni. A foglalás akkor végleges, amikor megkapod róla a visszaigazolást. Kérlek, olyan elérhetőséget adj meg, amelyen szükség esetén kapcsolatba tudok lépni veled.</p>
+    <p>Ha nem tudod, melyik kezelés lenne megfelelő számodra, írj nekem foglalás előtt, és segítek választani. Az első alkalommal a kezelés megkezdése előtt átbeszéljük a bőröd állapotát és az esetleges ellenjavallatokat. Ha a választott kezelés nem lenne megfelelő, közösen egyeztetünk más lehetőségről.</p>
+    <p><strong>Időpont módosítása és lemondása</strong></p>
+    <p>Ha mégsem jó az időpontod, kérlek, lehetőség szerint <strong>legalább 24 órával a kezelés előtt</strong> módosítsd vagy mondd le a foglaló alkalmazásban, vagy jelezd nekem a <a href="tel:+36308179093">+36 30 817 9093</a> telefonszámon. Így az időpontot más vendég számára is elérhetővé tudom tenni.</p>
+    <p>Ha megbetegszel vagy váratlan helyzet adódik, kérlek, akkor is szólj, amint tudsz. A lemondásért jelenleg nem számítok fel díjat.</p>
+    <p><strong>Késés</strong></p>
+    <p>Ha késel, kérlek, jelezd telefonon. A következő vendég időpontja miatt előfordulhat, hogy a kezelés idejét rövidítenünk kell, vagy új időpontot szükséges egyeztetnünk. Erről minden esetben egyeztetünk.</p>
+    <p><strong>Ha nekem kell módosítanom</strong></p>
+    <p>Ha váratlan okból én nem tudom megtartani az időpontodat, a lehető leghamarabb értesítelek, és új időpontot ajánlok.</p>
+    <p style="margin-top:0.8rem;">Köszönöm, hogy figyelsz a lefoglalt időpontra – várlak szeretettel!<br><strong>Petra</strong><br>HARMAT BEAUTY by Petra</p>
+</div>
+</div>
+</div>
+<div class="footer-copy">
+<p>&copy; <span id="currentYear"></span> <span data-i18n="footer_rights">HARMAT BEAUTY by Petra. Minden jog fenntartva.</span></p>
+</div>
+</div>
+</footer>
+
+<!-- JavaScript Translations & App Logic -->
+<script src="translations.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

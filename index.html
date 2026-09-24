@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HARMAT BEAUTY by Petra | Kozmetika & Bőrápolás</title>
+<meta name="description" content="Harmat Beauty by Petra - Professzionális kozmetikai kezelések, anti-aging, bőrmegújítás és személyre szabott szépségápolás. A szépség egyensúlya.">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Montserrat:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- FontAwesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- Stylesheet -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Header / Navbar -->
+<header class="site-header" id="navbar">
+<div class="container header-container">
+<a href="#home" class="brand-logo">
+  <span class="logo-harmat">HARMAT</span>
+  <span class="logo-beauty">BEAUTY</span>
+  <span class="logo-by-petra">by Petra</span>
+</a>
+<button class="mobile-menu-toggle" id="menuToggle" aria-label="Menü megnyitása">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav class="nav-menu" id="navMenu">
+<ul class="nav-links">
+<li><a href="#home" class="nav-link active" data-i18n="nav_home">Home</a></li>
+<li><a href="#szalon" class="nav-link" data-i18n="nav_salon">A szalon</a></li>
+<li class="nav-item-dropdown">
+  <a href="#kezelesek" class="nav-link nav-link-dropdown" data-i18n="nav_treatments">Kezelések <i class="fa-solid fa-chevron-down nav-dropdown-arrow"></i></a>
+  <ul class="nav-dropdown">
+    <li><a href="kezelesek.html#alap-tisztito" class="nav-dropdown-link"><i class="fa-solid fa-spa"></i> <span data-i18n="kez_nav_cat1">Alap & Mélytisztítás</span></a></li>
+    <li><a href="kezelesek.html#premium-antiaging" class="nav-dropdown-link"><i class="fa-solid fa-wand-magic-sparkles"></i> <span data-i18n="kez_nav_cat2">Healthy Aging & Anti-Aging</span></a></li>
+    <li><a href="kezelesek.html#kiegeszito-gyantazas" class="nav-dropdown-link"><i class="fa-solid fa-eye"></i> <span data-i18n="kez_nav_cat3">Styling & Gyantázás</span></a></li>
+    <li><a href="kezelesek.html#smink" class="nav-dropdown-link"><i class="fa-solid fa-paintbrush"></i> <span data-i18n="kez_nav_cat4">Smink</span></a></li>
+  </ul>
+</li>
+<li><a href="arlista.html" class="nav-link" data-i18n="nav_prices">Árlista</a></li>
+<li><a href="idopontfoglalas.html" class="nav-link" data-i18n="nav_booking">Időpontfoglalás</a></li>
+<li><a href="#rolam" class="nav-link" data-i18n="nav_about">Rólam</a></li>
+<li><a href="#kapcsolat" class="nav-link" data-i18n="nav_contact">Kapcsolat</a></li>
+</ul>
+<div class="nav-socials">
+<button type="button" class="lang-switch-btn" id="langSwitchBtn" onclick="toggleLanguage()" aria-label="Nyelvváltás / Switch Language">
+<i class="fa-solid fa-globe"></i>
+<span id="langBtnText">EN</span>
+</button>
+<a href="https://www.facebook.com/profile.php?id=100063218832190" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+<a href="https://www.instagram.com/harmat_beauty/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+<i class="fa-brands fa-instagram"></i>
+</a>
+</div>
+</nav>
+</div>
+</header>
+<main>
+<!-- Hero Section matching the screenshot -->
+<section class="hero-section" id="home">
+<div class="hero-content">
+<!-- Hero Logo Emblem: Waterdrop with botanical sprig -->
+<div class="hero-emblem-wrapper" aria-hidden="true">
+<img src="drop-logo.png.png" alt="" class="hero-emblem-svg hero-emblem-img">
+</div>
+<div class="hero-brand-block">
+<h1 class="hero-title-main"><span class="hero-harmat">HARMAT</span></h1>
+<div class="hero-beauty-row">
+<span class="hero-beauty">BEAUTY</span>
+<span class="hero-by-petra">by Petra</span>
+</div>
+</div>
+<div class="hero-divider-line" aria-hidden="true"></div>
+<h2 class="hero-tagline" data-i18n="hero_tagline">A SZÉPSÉG EGYENSÚLYA</h2>
+<div class="hero-cta-group">
+<a href="idopontfoglalas.html" class="btn btn-primary" data-i18n="hero_btn_booking">Időpontfoglalás</a>
+<a href="#kezelesek" class="btn btn-outline" data-i18n="hero_btn_treatments">Kezelések megtekintése</a>
+</div>
+</div>
+<div class="scroll-down-hint">
+<a href="#szalon" aria-label="Görgess lejjebb">
+<i class="fa-solid fa-chevron-down"></i>
+</a>
+</div>
+</section>
+
+<!-- A szalon Section -->
+<section class="section about-section" id="szalon">
+<!-- Wave Divider: Hero → A szalon (sits at the top of this section, fill = hero dark green) -->
+<div class="wave-divider wave-top" aria-hidden="true">
+<svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+<path class="wave-fill-hero" d="M0,40 C240,80 480,10 720,50 C960,90 1200,20 1440,45 L1440,100 L0,100 Z"></path>
+</svg>
+</div>
+<div class="container about-container">
+<div class="about-content">
+<span class="section-badge" data-i18n="salon_badge">A SZALON</span>
+<h2 class="section-title" data-i18n="salon_title">Egy hely, ahol magadra is jut idő</h2>
+<h3 class="about-quote" data-i18n="salon_quote">"A szépségápolás számomra nem csupán kezelés, hanem test és lélek megnyugvása."</h3>
+<p class="about-text" data-i18n="salon_p1">
+    A Harmat Beauty több egy szépségszalonnál. Egy nyugodt, meghitt helyet szerettem volna létrehozni, ahol bárhogy is érkezel, egy kicsit megállhatsz, feltöltődhetsz és újra önmagadra figyelhetsz. Nem kell elégedettnek lenned önmagaddal ahhoz, hogy elgyere hozzám. Sőt. Talán éppen akkor van a legnagyobb szükséged egy kis törődésre, amikor kevésbé érzed jól magad a bőrödben.
+</p>
+<p class="about-text" data-i18n="salon_p2">
+    Hiszem, hogy a szépség elsősorban belülről fakad. Amikor jól érzed magad a bőrödben, az kívülről is láthatóvá válik. A Harmat Beauty ezért nem arról szól, hogy meg kell változnod, hanem arról, hogy egy kicsit jobban érezd magad a saját bőrödben.
+</p>
+<div class="about-highlights-grid">
+<div class="highlight-item">
+<i class="fa-solid fa-shield-heart"></i>
+<div>
+<h4 data-i18n="salon_feat1_title">Prémium minőség</h4>
+<p data-i18n="salon_feat1_desc">Kizárólag bevizsgált, professzionális hatóanyagok</p>
+</div>
+</div>
+<div class="highlight-item">
+<i class="fa-solid fa-clock-rotate-left"></i>
+<div>
+<h4 data-i18n="salon_feat2_title">Egyéni figyelem</h4>
+<p data-i18n="salon_feat2_desc">Egyszerre csak egy vendég tartózkodik a szalonban</p>
+</div>
+</div>
+<div class="highlight-item">
+<i class="fa-solid fa-award"></i>
+<div>
+<h4 data-i18n="salon_feat3_title">Folyamatos fejlődés</h4>
+<p data-i18n="salon_feat3_desc">Rendszeres szakmai továbbképzések</p>
+</div>
+</div>
+<div class="highlight-item">
+<i class="fa-solid fa-mug-hot"></i>
+<div>
+<h4 data-i18n="salon_feat4_title">Harmonikus tér</h4>
+<p data-i18n="salon_feat4_desc">Nyugtató zene, valódi kikapcsolódás</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Wave Divider between A szalon (Secondary Dark Green) and Treatments (#F4E5DC) -->
+<div class="wave-divider wave-bottom">
+<svg viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
+<path class="wave-fill-price" d="M0,45 C320,10 640,75 1080,45 C1260,30 1380,55 1440,60 L1440,100 L0,100 Z"></path>
+<path class="wave-stroke-treatments" d="M0,45 C320,10 640,75 1080,45 C1260,30 1380,55 1440,60"></path>
+</svg>
+</div>
+</section>
+
+<!-- Kezelések (Treatments) Section -->
+<section class="section treatments-section" id="kezelesek">
+<div class="container">
+<div class="section-header">
+<span class="section-badge" data-i18n="treatments_badge">SZOLGÁLTATÁSOK</span>
+<h2 class="section-title" data-i18n="treatments_title">Kezelések</h2>
+</div>
+<div class="treatments-grid">
+<!-- Treatment Category Card 1 -->
+<div class="treatment-card">
+<div class="treatment-header">
+<span class="treatment-icon"><i class="fa-solid fa-spa"></i></span>
+<span class="treatment-badge-cat" data-i18n="card1_cat">Kezelés</span>
+</div>
+<h3 class="treatment-name" data-i18n="card1_title">Alap és mélytisztító kezelések</h3>
+<p class="treatment-text" data-i18n="card1_desc">Fedezd fel a személyre szabott arckezelések és a professzionális bőrápolás világát, ahol a bőr egészsége, a feltöltődés és a természetes szépség kerül a középpontba, hogy bőröd és te is ragyoghass.</p>
+<div class="treatment-footer">
+<a href="kezelesek.html#alap-tisztito" class="treatment-link-more"><span data-i18n="treatments_view_all">Összes kezelés megtekintése</span> <i class="fa-solid fa-arrow-right"></i></a>
+<a href="idopontfoglalas.html?service=Alap+és+mélytisztító+kezelések" class="btn btn-sm" data-i18n="treatments_btn_booking">Időpontfoglalás</a>
+</div>
+</div>
+<!-- Treatment Category Card 2 -->
+<div class="treatment-card featured-card">
+<div class="treatment-badge" data-i18n="card2_badge">Kiemelt</div>
+<div class="treatment-header">
+<span class="treatment-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+<span class="treatment-badge-cat" data-i18n="card2_cat">Anti-Aging</span>
+</div>
+<h3 class="treatment-name" data-i18n="card2_title">Prémium Bőrmegújítás & Healthy Aging</h3>
+<p class="treatment-text" data-i18n="card2_desc">Kezelések, melyek nem csupán a bőr megújítását szolgálják, hanem a kötőszövet, az arcizmok és az idegrendszer harmonizálásán keresztül támogatják a szépség természetes egyensúlyát.</p>
+<div class="treatment-footer">
+<a href="kezelesek.html#premium-antiaging" class="treatment-link-more"><span data-i18n="treatments_view_all">Összes kezelés megtekintése</span> <i class="fa-solid fa-arrow-right"></i></a>
+<a href="idopontfoglalas.html?service=Prémium+Bőrmegújítás+&+Healthy+Aging" class="btn btn-sm btn-primary" data-i18n="treatments_btn_booking">Időpontfoglalás</a>
+</div>
+</div>
+<!-- Treatment Category Card 3 -->
+<div class="treatment-card">
+<div class="treatment-header">
+<span class="treatment-icon"><i class="fa-solid fa-eye"></i></span>
+<span class="treatment-badge-cat" data-i18n="card3_cat">Styling</span>
+</div>
+<h3 class="treatment-name" data-i18n="card3_title">Kiegészítő Szolgáltatások & Gyantázás</h3>
+<p class="treatment-text" data-i18n="card3_desc">Az apró részletek teszik teljessé az összképet. Gyantázási, szempilla- és szemöldökstyling szolgáltatásaim a természetes szépség finom kiemelésére, az arc harmóniájának megőrzésére és az igényes, ápolt megjelenés megteremtésére fókuszálnak.</p>
+<div class="treatment-footer">
+<a href="kezelesek.html#kiegeszito-gyantazas" class="treatment-link-more"><span data-i18n="treatments_view_all">Összes kezelés megtekintése</span> <i class="fa-solid fa-arrow-right"></i></a>
+<a href="idopontfoglalas.html?service=Kiegészítő+Szolgáltatások+&+Gyantázás" class="btn btn-sm" data-i18n="treatments_btn_booking">Időpontfoglalás</a>
+</div>
+</div>
+<!-- Treatment Category Card 4 -->
+<div class="treatment-card">
+<div class="treatment-header">
+<span class="treatment-icon"><i class="fa-solid fa-paintbrush"></i></span>
+<span class="treatment-badge-cat" data-i18n="card4_cat">Smink</span>
+</div>
+<h3 class="treatment-name" data-i18n="card4_title">Smink</h3>
+<p class="treatment-text" data-i18n="card4_desc">Professzionális sminkkészítés, amely kiemeli természetes szépségedet és harmonikusan igazodik egyéni stílusodhoz, hogy minden alkalommal magabiztosan ragyoghass.</p>
+<div class="treatment-footer">
+<a href="kezelesek.html#smink" class="treatment-link-more"><span data-i18n="treatments_view_all">Összes kezelés megtekintése</span> <i class="fa-solid fa-arrow-right"></i></a>
+<a href="idopontfoglalas.html?service=Smink" class="btn btn-sm" data-i18n="treatments_btn_booking">Időpontfoglalás</a>
+</div>
+</div>
+</div>
+<div class="treatment-cta-banner" style="text-align: center; margin-top: 3.5rem;">
+<a href="arlista.html" class="btn btn-outline" style="border-color: #142820; color: #142820; background: rgba(255, 255, 255, 0.4); padding: 0.85rem 2rem; font-weight: 600;" data-i18n="treatments_view_pricelist">
+<i class="fa-solid fa-tag"></i> Részletes Árlista megtekintése &rarr;
+</a>
+</div>
+</div>
+<!-- Wave Divider between Kezelések (#F4E5DC) and Rólam (#CBB09A) with color #F4E5DC -->
+<div class="wave-divider wave-bottom">
+<svg viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
+<path class="wave-fill-petra-about" d="M0,45 C320,70 680,20 1060,55 C1240,75 1360,40 1440,35 L1440,100 L0,100 Z"></path>
+<path class="wave-stroke-treatments" d="M0,45 C320,70 680,20 1060,55 C1240,75 1360,40 1440,35"></path>
+</svg>
+</div>
+</section>
+
+<!-- Rólam (About Petra) Section -->
+<section class="section rolam-section" id="rolam">
+<div class="container rolam-container">
+<div class="rolam-image-wrapper">
+<div class="rolam-image-frame">
+<img src="Petra2.JPG" alt="Petra - Harmat Beauty megálmodója" class="rolam-photo">
+</div>
+</div>
+<div class="rolam-content">
+<span class="rolam-badge" data-i18n="rolam_badge">RÓLAM</span>
+<h2 class="rolam-title" data-i18n="rolam_title">Nem új szenvedély, hanem régi szerelem</h2>
+<div class="rolam-divider" aria-hidden="true"></div>
+<div class="rolam-text-body">
+<p class="rolam-lead" data-i18n="rolam_lead">Szia, Petra vagyok, a Harmat Beauty megálmodója.</p>
+<p data-i18n="rolam_p1">A szépségápolás kamaszkorom óta a szenvedélyem – sokáig azonban csak álom volt, hogy egyszer hivatásként is ezzel foglalkozhassak.</p>
+<p data-i18n="rolam_p2">Az élet először másfelé vitt: diplomát szereztem, dolgozni kezdtem, családot alapítottam. Az első gyermekem születése után azonban, a férjem támogatásának köszönhetően, végre belevágtam a kozmetikus képzésbe, és 2021-ben megszereztem a végzettségemet.</p>
+<p data-i18n="rolam_p3">Most pedig elérkezett az idő, hogy egy régi álomból valóság legyen.</p>
+<p data-i18n="rolam_p4">A Harmat Beautyt egy olyan nyugodt, igényes helynek álmodtam meg, ahol a szépségápolás mellett az is fontos, hogy legyen időd megállni, feltöltődni és egy kicsit csak magaddal foglalkozni.</p>
+<p data-i18n="rolam_p5">Hiszek a természetes, ápolt szépségben, a személyre szabott törődésben és abban, hogy a bőrápolás nem csupán egy kezelés – hanem egy kis énidő is, mert a szépség belülről fakad.</p>
+<p class="rolam-closing" data-i18n="rolam_closing">Örülök, hogy itt vagy.</p>
+<p class="rolam-signature" data-i18n="rolam_signature">Petra</p>
+</div>
+</div>
+</div>
+<!-- Wave Divider between Rólam (#CBB09A) and Elérhetőség (#EFD3C2) -->
+<div class="wave-divider wave-bottom">
+<svg viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
+<path class="wave-fill-szalon" d="M0,45 C320,70 680,20 1060,55 C1240,75 1360,40 1440,35 L1440,100 L0,100 Z"></path>
+<path class="wave-stroke-petra" d="M0,45 C320,70 680,20 1060,55 C1240,75 1360,40 1440,35"></path>
+</svg>
+</div>
+</section>
+
+<!-- Kapcsolat (Contact & Location) Section -->
+<section class="section contact-section" id="kapcsolat">
+<div class="container">
+<div class="section-header">
+<span class="section-badge" data-i18n="contact_badge">ELÉRHETŐSÉG</span>
+<h2 class="section-title" data-i18n="contact_title">Maradj kapcsolatban velem</h2>
+<p class="section-desc" data-i18n="contact_desc">Kövess Facebookon és Instagramon, ahol szépségápolási tippeket, aktuális kezeléseket, újdonságokat és a mindennapok pillanatait osztom meg.</p>
+</div>
+<div class="contact-grid">
+<div class="contact-card">
+<div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+<h3 data-i18n="contact_loc_title">Cím & Helyszín</h3>
+<p data-i18n="contact_loc_p">1052 Budapest, Belváros</p>
+<p class="contact-sub" data-i18n="contact_loc_sub">Kényelmes parkolás az utcában.</p>
+</div>
+<div class="contact-card">
+<div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+<h3 data-i18n="contact_phone_title">Telefonos elérhetőség</h3>
+<p><a href="tel:+36308179093">+36 30 817 9093</a></p>
+<p class="contact-sub" data-i18n="contact_phone_sub">Hívható: Hétfő - Péntek 08:30 - 19:30</p>
+</div>
+<div class="contact-card">
+<div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+<h3 data-i18n="contact_email_title">E-mail</h3>
+<p><a href="mailto:harmatbeautypetra@gmail.com">harmatbeautypetra@gmail.com</a></p>
+<p class="contact-sub" data-i18n="contact_email_sub">Általános kérdésekre és ajánlatkérésre.</p>
+</div>
+<div class="contact-card">
+<div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+<h3 data-i18n="contact_hours_title">Nyitvatartás</h3>
+<p style="line-height:2; margin:0;">
+    <span style="display:flex; justify-content:space-between; gap:1rem;"><span data-i18n="contact_hours_mon">H</span><span>8:30 – 19:00</span></span>
+    <span style="display:flex; justify-content:space-between; gap:1rem;"><span data-i18n="contact_hours_tue">K</span><span>7:30 – 15:30</span></span>
+    <span style="display:flex; justify-content:space-between; gap:1rem;"><span data-i18n="contact_hours_wed">Sz</span><span>8:00 – 15:30</span></span>
+    <span style="display:flex; justify-content:space-between; gap:1rem;"><span data-i18n="contact_hours_thu">Cs</span><span>8:30 – 19:00</span></span>
+    <span style="display:flex; justify-content:space-between; gap:1rem;"><span data-i18n="contact_hours_fri">P</span><span>8:30 – 15:30</span></span>
+</p>
+<p class="contact-sub" style="margin-top:0.5rem;" data-i18n="contact_hours_sub">Minden hónap első szombatján: 7:30 – 15:30</p>
+</div>
+<a href="https://www.facebook.com/profile.php?id=100063218832190" target="_blank" rel="noopener noreferrer" class="contact-card contact-card-link">
+<div class="contact-icon"><i class="fa-brands fa-facebook-f"></i></div>
+<h3>Facebook</h3>
+<p>@Harmat Beauty</p>
+<p class="contact-sub" data-i18n="contact_fb_sub">Kövess be a legfrissebb hírekért és ajánlatokért &rarr;</p>
+</a>
+<a href="https://www.instagram.com/harmat_beauty/" target="_blank" rel="noopener noreferrer" class="contact-card contact-card-link">
+<div class="contact-icon"><i class="fa-brands fa-instagram"></i></div>
+<h3>Instagram</h3>
+<p>@harmat_beauty</p>
+<p class="contact-sub" data-i18n="contact_ig_sub">Képek kezelésekről és mindennapokról &rarr;</p>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="site-footer">
+<div class="container footer-container">
+<div class="footer-brand">
+<div class="footer-logo">HARMAT BEAUTY</div>
+<p class="footer-sub" data-i18n="footer_sub">by Petra — A szépség egyensúlya</p>
+</div>
+<div class="footer-socials">
+<a href="https://www.facebook.com/profile.php?id=100063218832190" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="https://www.instagram.com/harmat_beauty/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+</div>
+<!-- Footer legal toggles -->
+<div class="footer-legal-row">
+<div class="footer-impresszum">
+<button class="impresszum-toggle" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">
+    Impresszum <i class="fa-solid fa-chevron-down"></i>
+</button>
+<div class="impresszum-body">
+    <h4>Impresszum</h4>
+    <p><strong>A honlap neve:</strong> HARMAT BEAUTY by Petra</p>
+    <p><strong>A honlap címe:</strong> www.harmatbeautybypetra.hu</p>
+    <p><strong>A honlap üzemeltetője:</strong> Solti-Porszász Petra egyéni vállalkozó</p>
+    <p><strong>Székhely:</strong> 1183 Budapest Teleki utca 73b</p>
+    <p><strong>A kozmetika címe:</strong> [a vendégeket fogadó hely címe]</p>
+    <p><strong>E-mail:</strong> <a href="mailto:harmatbeautypetra@gmail.com">harmatbeautypetra@gmail.com</a></p>
+    <p><strong>Telefon:</strong> <a href="tel:+36308179093">+36 30 817 9093</a></p>
+    <p><strong>Nyilvántartási szám:</strong> [egyéni vállalkozói nyilvántartási szám]</p>
+    <p><strong>Nyilvántartást vezető hatóság:</strong> [hatóság neve]</p>
+    <p><strong>Adószám:</strong> [adószám]</p>
+</div>
+</div>
+<div class="footer-impresszum">
+<button class="impresszum-toggle" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">
+    Foglalási &amp; lemondási feltételek <i class="fa-solid fa-chevron-down"></i>
+</button>
+<div class="impresszum-body">
+    <h4>Foglalási és lemondási feltételek</h4>
+    <p><strong>Időpontfoglalás</strong></p>
+    <p>Kezelésre a foglaló alkalmazáson keresztül tudsz időpontot kérni. A foglalás akkor végleges, amikor megkapod róla a visszaigazolást. Kérlek, olyan elérhetőséget adj meg, amelyen szükség esetén kapcsolatba tudok lépni veled.</p>
+    <p>Ha nem tudod, melyik kezelés lenne megfelelő számodra, írj nekem foglalás előtt, és segítek választani. Az első alkalommal a kezelés megkezdése előtt átbeszéljük a bőröd állapotát és az esetleges ellenjavallatokat. Ha a választott kezelés nem lenne megfelelő, közösen egyeztetünk más lehetőségről.</p>
+    <p><strong>Időpont módosítása és lemondása</strong></p>
+    <p>Ha mégsem jó az időpontod, kérlek, lehetőség szerint <strong>legalább 24 órával a kezelés előtt</strong> módosítsd vagy mondd le a foglaló alkalmazásban, vagy jelezd nekem a <a href="tel:+36308179093">+36 30 817 9093</a> telefonszámon. Így az időpontot más vendég számára is elérhetővé tudom tenni.</p>
+    <p>Ha megbetegszel vagy váratlan helyzet adódik, kérlek, akkor is szólj, amint tudsz. A lemondásért jelenleg nem számítok fel díjat.</p>
+    <p><strong>Késés</strong></p>
+    <p>Ha késel, kérlek, jelezd telefonon. A következő vendég időpontja miatt előfordulhat, hogy a kezelés idejét rövidítenünk kell, vagy új időpontot szükséges egyeztetnünk. Erről minden esetben egyeztetünk.</p>
+    <p><strong>Ha nekem kell módosítanom</strong></p>
+    <p>Ha váratlan okból én nem tudom megtartani az időpontodat, a lehető leghamarabb értesítelek, és új időpontot ajánlok.</p>
+    <p style="margin-top:0.8rem;">Köszönöm, hogy figyelsz a lefoglalt időpontra – várlak szeretettel!<br><strong>Petra</strong><br>HARMAT BEAUTY by Petra</p>
+</div>
+</div>
+</div>
+<div class="footer-copy">
+<p>&copy; <span id="currentYear"></span> <span data-i18n="footer_rights">HARMAT BEAUTY by Petra. Minden jog fenntartva.</span></p>
+</div>
+</div>
+</footer>
+<!-- JavaScript Translations & App Logic -->
+<script src="translations.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
