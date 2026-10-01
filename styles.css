@@ -704,9 +704,9 @@ ul {
     stroke-width: 1.5;
 }
 
-/* Rólam (About Petra) section wave fill (#CBB09A) */
+/* Rólam (About Petra) section wave fill (#FDF7F2) */
 .wave-fill-petra-about {
-    fill: #CBB09A;
+    fill: #FDF7F2;
 }
 
 /* Treatments section wave fill (#CBB09A) */
@@ -1544,10 +1544,10 @@ ul {
 
 /* ==========================================================
    Rólam (About Petra) Section
-   Background: #CBB09A | Letters: #6D4D31 | Divider: #6D4D31
+   Background: #FDF7F2 | Letters: #6D4D31 | Divider: #6D4D31
    ========================================================== */
 .rolam-section {
-    background-color: #CBB09A;
+    background-color: #FDF7F2;
     color: #534b46;
 }
 
@@ -2055,4 +2055,255 @@ ul {
     .price-item-duration {
         display: none;
     }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════════
+   COOKIE CONSENT BANNER
+   ═══════════════════════════════════════════════════════════════════════════════ */
+
+#hb-cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: #0b1712;
+    border-top: 1px solid rgba(229, 223, 211, 0.15);
+    padding: 1.4rem 1.5rem;
+    box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.35);
+}
+
+#hb-cookie-banner[hidden] {
+    display: none;
+}
+
+.hb-cookie-inner {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+/* Simple view (default) */
+#hb-cookie-simple {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
+}
+
+#hb-cookie-simple[hidden],
+#hb-cookie-detail[hidden] {
+    display: none;
+}
+
+.hb-cookie-text {
+    flex: 1 1 260px;
+    font-size: 0.84rem;
+    color: rgba(229, 223, 211, 0.75);
+    line-height: 1.6;
+}
+
+.hb-cookie-text strong {
+    color: #e5dfd3;
+    font-weight: 700;
+}
+
+.hb-cookie-actions {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hb-btn {
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 0.45rem 1.1rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+}
+
+.hb-btn-primary {
+    background: #e5dfd3;
+    color: #0b1712;
+    border-color: #e5dfd3;
+}
+
+.hb-btn-primary:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+}
+
+.hb-btn-outline {
+    background: transparent;
+    color: rgba(229, 223, 211, 0.75);
+    border-color: rgba(229, 223, 211, 0.25);
+}
+
+.hb-btn-outline:hover {
+    color: #e5dfd3;
+    border-color: rgba(229, 223, 211, 0.55);
+}
+
+/* Detail / settings view */
+#hb-cookie-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hb-detail-title {
+    font-family: var(--font-heading, 'Cormorant Garamond', serif);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #e5dfd3;
+    margin: 0;
+}
+
+.hb-detail-desc {
+    font-size: 0.82rem;
+    color: rgba(229, 223, 211, 0.65);
+    line-height: 1.65;
+    margin: 0;
+}
+
+.hb-cookie-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 10px;
+    padding: 0.9rem 1.1rem;
+    flex-wrap: wrap;
+}
+
+.hb-cookie-row-info {
+    flex: 1 1 200px;
+}
+
+.hb-cookie-row-info strong {
+    display: block;
+    font-size: 0.84rem;
+    color: #e5dfd3;
+    margin-bottom: 0.2rem;
+}
+
+.hb-cookie-row-info span {
+    font-size: 0.78rem;
+    color: rgba(229, 223, 211, 0.55);
+    line-height: 1.55;
+}
+
+/* Toggle switch */
+.hb-toggle-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+.hb-toggle-label {
+    font-size: 0.75rem;
+    color: rgba(229, 223, 211, 0.5);
+}
+
+.hb-toggle {
+    position: relative;
+    width: 40px;
+    height: 22px;
+}
+
+.hb-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.hb-toggle-track {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 22px;
+    cursor: pointer;
+    transition: background 0.25s ease;
+}
+
+.hb-toggle-track::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: rgba(229, 223, 211, 0.5);
+    transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.hb-toggle input:checked + .hb-toggle-track {
+    background: #a46d4a;
+}
+
+.hb-toggle input:checked + .hb-toggle-track::after {
+    transform: translateX(18px);
+    background: #e5dfd3;
+}
+
+/* Always-on badge */
+.hb-always-on {
+    font-size: 0.72rem;
+    color: rgba(229, 223, 211, 0.4);
+    font-style: italic;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.hb-detail-footer {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 0.4rem;
+}
+
+/* Withdraw confirmation message */
+#hb-withdraw-confirm {
+    font-size: 0.82rem;
+    color: rgba(229, 223, 211, 0.7);
+    text-align: center;
+    padding-top: 0.3rem;
+}
+
+#hb-withdraw-confirm[hidden] {
+    display: none;
+}
+
+/* Footer cookie settings link */
+.hb-cookie-settings-link {
+    background: none;
+    border: 1px solid rgba(229, 223, 211, 0.2);
+    border-radius: 20px;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    padding: 0.45rem 1.1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: border-color 0.2s ease, color 0.2s ease;
+    text-decoration: none;
+}
+
+.hb-cookie-settings-link:hover {
+    border-color: rgba(229, 223, 211, 0.5);
+    color: #e5dfd3;
 }

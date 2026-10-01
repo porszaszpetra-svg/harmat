@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <!-- Stylesheet -->
 <link rel="stylesheet" href="styles.css">
+<!-- Cookie Consent & Analytics (must load before page scripts) -->
+<script src="consent.js"></script>
 </head>
 <body>
 <!-- Header / Navbar -->
@@ -109,36 +111,6 @@
 <p class="about-text" data-i18n="salon_p2">
     Hiszem, hogy a szépség elsősorban belülről fakad. Amikor jól érzed magad a bőrödben, az kívülről is láthatóvá válik. A Harmat Beauty ezért nem arról szól, hogy meg kell változnod, hanem arról, hogy egy kicsit jobban érezd magad a saját bőrödben.
 </p>
-<div class="about-highlights-grid">
-<div class="highlight-item">
-<i class="fa-solid fa-shield-heart"></i>
-<div>
-<h4 data-i18n="salon_feat1_title">Prémium minőség</h4>
-<p data-i18n="salon_feat1_desc">Kizárólag bevizsgált, professzionális hatóanyagok</p>
-</div>
-</div>
-<div class="highlight-item">
-<i class="fa-solid fa-clock-rotate-left"></i>
-<div>
-<h4 data-i18n="salon_feat2_title">Egyéni figyelem</h4>
-<p data-i18n="salon_feat2_desc">Egyszerre csak egy vendég tartózkodik a szalonban</p>
-</div>
-</div>
-<div class="highlight-item">
-<i class="fa-solid fa-award"></i>
-<div>
-<h4 data-i18n="salon_feat3_title">Folyamatos fejlődés</h4>
-<p data-i18n="salon_feat3_desc">Rendszeres szakmai továbbképzések</p>
-</div>
-</div>
-<div class="highlight-item">
-<i class="fa-solid fa-mug-hot"></i>
-<div>
-<h4 data-i18n="salon_feat4_title">Harmonikus tér</h4>
-<p data-i18n="salon_feat4_desc">Nyugtató zene, valódi kikapcsolódás</p>
-</div>
-</div>
-</div>
 </div>
 </div>
 <!-- Wave Divider between A szalon (Secondary Dark Green) and Treatments (#F4E5DC) -->
@@ -154,68 +126,14 @@
 <section class="section treatments-section" id="kezelesek">
 <div class="container">
 <div class="section-header">
-<span class="section-badge" data-i18n="treatments_badge">SZOLGÁLTATÁSOK</span>
 <h2 class="section-title" data-i18n="treatments_title">Kezelések</h2>
 </div>
-<div class="treatments-grid">
-<!-- Treatment Category Card 1 -->
-<div class="treatment-card">
-<div class="treatment-header">
-<span class="treatment-icon"><i class="fa-solid fa-spa"></i></span>
-<span class="treatment-badge-cat" data-i18n="card1_cat">Kezelés</span>
-</div>
-<h3 class="treatment-name" data-i18n="card1_title">Alap és mélytisztító kezelések</h3>
-<p class="treatment-text" data-i18n="card1_desc">Fedezd fel a személyre szabott arckezelések és a professzionális bőrápolás világát, ahol a bőr egészsége, a feltöltődés és a természetes szépség kerül a középpontba, hogy bőröd és te is ragyoghass.</p>
-<div class="treatment-footer">
-<a href="kezelesek.html#alap-tisztito" class="treatment-link-more"><span data-i18n="treatments_view_all">Összes kezelés megtekintése</span> <i class="fa-solid fa-arrow-right"></i></a>
-<a href="idopontfoglalas.html?service=Alap+és+mélytisztító+kezelések" class="btn btn-sm" data-i18n="treatments_btn_booking">Időpontfoglalás</a>
-</div>
-</div>
-<!-- Treatment Category Card 2 -->
-<div class="treatment-card featured-card">
-<div class="treatment-badge" data-i18n="card2_badge">Kiemelt</div>
-<div class="treatment-header">
-<span class="treatment-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
-<span class="treatment-badge-cat" data-i18n="card2_cat">Anti-Aging</span>
-</div>
-<h3 class="treatment-name" data-i18n="card2_title">Prémium Bőrmegújítás & Healthy Aging</h3>
-<p class="treatment-text" data-i18n="card2_desc">Kezelések, melyek nem csupán a bőr megújítását szolgálják, hanem a kötőszövet, az arcizmok és az idegrendszer harmonizálásán keresztül támogatják a szépség természetes egyensúlyát.</p>
-<div class="treatment-footer">
-<a href="kezelesek.html#premium-antiaging" class="treatment-link-more"><span data-i18n="treatments_view_all">Összes kezelés megtekintése</span> <i class="fa-solid fa-arrow-right"></i></a>
-<a href="idopontfoglalas.html?service=Prémium+Bőrmegújítás+&+Healthy+Aging" class="btn btn-sm btn-primary" data-i18n="treatments_btn_booking">Időpontfoglalás</a>
-</div>
-</div>
-<!-- Treatment Category Card 3 -->
-<div class="treatment-card">
-<div class="treatment-header">
-<span class="treatment-icon"><i class="fa-solid fa-eye"></i></span>
-<span class="treatment-badge-cat" data-i18n="card3_cat">Styling</span>
-</div>
-<h3 class="treatment-name" data-i18n="card3_title">Kiegészítő Szolgáltatások & Gyantázás</h3>
-<p class="treatment-text" data-i18n="card3_desc">Az apró részletek teszik teljessé az összképet. Gyantázási, szempilla- és szemöldökstyling szolgáltatásaim a természetes szépség finom kiemelésére, az arc harmóniájának megőrzésére és az igényes, ápolt megjelenés megteremtésére fókuszálnak.</p>
-<div class="treatment-footer">
-<a href="kezelesek.html#kiegeszito-gyantazas" class="treatment-link-more"><span data-i18n="treatments_view_all">Összes kezelés megtekintése</span> <i class="fa-solid fa-arrow-right"></i></a>
-<a href="idopontfoglalas.html?service=Kiegészítő+Szolgáltatások+&+Gyantázás" class="btn btn-sm" data-i18n="treatments_btn_booking">Időpontfoglalás</a>
-</div>
-</div>
-<!-- Treatment Category Card 4 -->
-<div class="treatment-card">
-<div class="treatment-header">
-<span class="treatment-icon"><i class="fa-solid fa-paintbrush"></i></span>
-<span class="treatment-badge-cat" data-i18n="card4_cat">Smink</span>
-</div>
-<h3 class="treatment-name" data-i18n="card4_title">Smink</h3>
-<p class="treatment-text" data-i18n="card4_desc">Professzionális sminkkészítés, amely kiemeli természetes szépségedet és harmonikusan igazodik egyéni stílusodhoz, hogy minden alkalommal magabiztosan ragyoghass.</p>
-<div class="treatment-footer">
-<a href="kezelesek.html#smink" class="treatment-link-more"><span data-i18n="treatments_view_all">Összes kezelés megtekintése</span> <i class="fa-solid fa-arrow-right"></i></a>
-<a href="idopontfoglalas.html?service=Smink" class="btn btn-sm" data-i18n="treatments_btn_booking">Időpontfoglalás</a>
-</div>
-</div>
-</div>
-<div class="treatment-cta-banner" style="text-align: center; margin-top: 3.5rem;">
-<a href="arlista.html" class="btn btn-outline" style="border-color: #142820; color: #142820; background: rgba(255, 255, 255, 0.4); padding: 0.85rem 2rem; font-weight: 600;" data-i18n="treatments_view_pricelist">
-<i class="fa-solid fa-tag"></i> Részletes Árlista megtekintése &rarr;
-</a>
+<div style="max-width: 640px; margin: 0 auto; text-align: center; background: rgba(255,255,255,0.6); border-radius: 16px; padding: 3rem 2.5rem; box-shadow: 0 4px 24px rgba(0,0,0,0.06); border: 1px solid rgba(140,91,62,0.15);">
+  <img src="drop-logo.png.png" alt="" style="width: 80px; height: auto; margin-bottom: 1.2rem; filter: brightness(0) saturate(100%) invert(92%) sepia(8%) saturate(350%) hue-rotate(10deg) brightness(96%);">
+  <h3 style="font-family: var(--font-heading); font-size: clamp(1.4rem, 3vw, 1.9rem); font-weight: 700; color: #142820; margin-bottom: 1.5rem;" data-i18n="treatments_soon_title">Hamarosan minden részlet a helyére kerül</h3>
+  <p style="font-size: 1rem; color: #553b25; line-height: 1.8; margin-bottom: 0.5rem;" data-i18n="treatments_soon_p1">Már készülök, hogy személyre szabott kezelésekkel és egy kis énidővel várhassalak. A kezelések részletes leírását és az árlistát hamarosan itt is megtalálod.</p>
+  <p style="font-size: 1rem; color: #553b25; line-height: 1.8; margin-bottom: 1.8rem;" data-i18n="treatments_soon_p2">Nézz vissza később, szeretettel várlak!</p>
+  <p style="font-size: 1rem; font-weight: 600; color: #142820;">Petra</p>
 </div>
 </div>
 <!-- Wave Divider between Kezelések (#F4E5DC) and Rólam (#CBB09A) with color #F4E5DC -->
@@ -271,8 +189,8 @@
 <div class="contact-grid">
 <div class="contact-card">
 <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
-<h3 data-i18n="contact_loc_title">Cím & Helyszín</h3>
-<p data-i18n="contact_loc_p">1052 Budapest, Belváros</p>
+<h3 data-i18n="contact_loc_title">Cím</h3>
+<p data-i18n="contact_loc_p">1183 Budapest, Gyöngyvirág utca 40/B</p>
 <p class="contact-sub" data-i18n="contact_loc_sub">Kényelmes parkolás az utcában.</p>
 </div>
 <div class="contact-card">
@@ -330,47 +248,157 @@
 <div class="footer-legal-row">
 <div class="footer-impresszum">
 <button class="impresszum-toggle" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">
-    Impresszum <i class="fa-solid fa-chevron-down"></i>
+    <span data-i18n="footer_impresszum_btn">Impresszum</span> <i class="fa-solid fa-chevron-down"></i>
 </button>
 <div class="impresszum-body">
-    <h4>Impresszum</h4>
-    <p><strong>A honlap neve:</strong> HARMAT BEAUTY by Petra</p>
-    <p><strong>A honlap címe:</strong> www.harmatbeautybypetra.hu</p>
-    <p><strong>A honlap üzemeltetője:</strong> Solti-Porszász Petra egyéni vállalkozó</p>
-    <p><strong>Székhely:</strong> 1183 Budapest Teleki utca 73b</p>
-    <p><strong>A kozmetika címe:</strong> [a vendégeket fogadó hely címe]</p>
-    <p><strong>E-mail:</strong> <a href="mailto:harmatbeautypetra@gmail.com">harmatbeautypetra@gmail.com</a></p>
-    <p><strong>Telefon:</strong> <a href="tel:+36308179093">+36 30 817 9093</a></p>
-    <p><strong>Nyilvántartási szám:</strong> [egyéni vállalkozói nyilvántartási szám]</p>
-    <p><strong>Nyilvántartást vezető hatóság:</strong> [hatóság neve]</p>
-    <p><strong>Adószám:</strong> [adószám]</p>
+    <h4 data-i18n="footer_impresszum_title">Impresszum</h4>
+    <p><strong data-i18n="footer_impresszum_website_name_label">A honlap neve:</strong> HARMAT BEAUTY by Petra</p>
+    <p><strong data-i18n="footer_impresszum_website_url_label">A honlap címe:</strong> www.harmatbeautybypetra.hu</p>
+    <p><strong data-i18n="footer_impresszum_operator_label">A honlap üzemeltetője:</strong> <span data-i18n="footer_impresszum_operator_val">Solti-Porszász Petra egyéni vállalkozó</span></p>
+    <p><strong data-i18n="footer_impresszum_hq_label">Székhely:</strong> 1183 Budapest Teleki utca 73b</p>
+    <p><strong data-i18n="footer_impresszum_salon_label">A kozmetika címe:</strong> <span data-i18n="footer_impresszum_salon_val">[a vendégeket fogadó hely címe]</span></p>
+    <p><strong data-i18n="footer_impresszum_email_label">E-mail:</strong> <a href="mailto:harmatbeautypetra@gmail.com">harmatbeautypetra@gmail.com</a></p>
+    <p><strong data-i18n="footer_impresszum_phone_label">Telefon:</strong> <a href="tel:+36308179093">+36 30 817 9093</a></p>
+    <p><strong data-i18n="footer_impresszum_reg_label">Nyilvántartási szám:</strong> <span data-i18n="footer_impresszum_reg_val">[egyéni vállalkozói nyilvántartási szám]</span></p>
+    <p><strong data-i18n="footer_impresszum_reg_auth_label">Nyilvántartást vezető hatóság:</strong> <span data-i18n="footer_impresszum_reg_auth_val">[hatóság neve]</span></p>
+    <p><strong data-i18n="footer_impresszum_tax_label">Adószám:</strong> <span data-i18n="footer_impresszum_tax_val">[adószám]</span></p>
 </div>
 </div>
 <div class="footer-impresszum">
 <button class="impresszum-toggle" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">
-    Foglalási &amp; lemondási feltételek <i class="fa-solid fa-chevron-down"></i>
+    <span data-i18n="footer_booking_btn">Foglalási &amp; lemondási feltételek</span> <i class="fa-solid fa-chevron-down"></i>
 </button>
 <div class="impresszum-body">
-    <h4>Foglalási és lemondási feltételek</h4>
-    <p><strong>Időpontfoglalás</strong></p>
-    <p>Kezelésre a foglaló alkalmazáson keresztül tudsz időpontot kérni. A foglalás akkor végleges, amikor megkapod róla a visszaigazolást. Kérlek, olyan elérhetőséget adj meg, amelyen szükség esetén kapcsolatba tudok lépni veled.</p>
-    <p>Ha nem tudod, melyik kezelés lenne megfelelő számodra, írj nekem foglalás előtt, és segítek választani. Az első alkalommal a kezelés megkezdése előtt átbeszéljük a bőröd állapotát és az esetleges ellenjavallatokat. Ha a választott kezelés nem lenne megfelelő, közösen egyeztetünk más lehetőségről.</p>
-    <p><strong>Időpont módosítása és lemondása</strong></p>
-    <p>Ha mégsem jó az időpontod, kérlek, lehetőség szerint <strong>legalább 24 órával a kezelés előtt</strong> módosítsd vagy mondd le a foglaló alkalmazásban, vagy jelezd nekem a <a href="tel:+36308179093">+36 30 817 9093</a> telefonszámon. Így az időpontot más vendég számára is elérhetővé tudom tenni.</p>
-    <p>Ha megbetegszel vagy váratlan helyzet adódik, kérlek, akkor is szólj, amint tudsz. A lemondásért jelenleg nem számítok fel díjat.</p>
-    <p><strong>Késés</strong></p>
-    <p>Ha késel, kérlek, jelezd telefonon. A következő vendég időpontja miatt előfordulhat, hogy a kezelés idejét rövidítenünk kell, vagy új időpontot szükséges egyeztetnünk. Erről minden esetben egyeztetünk.</p>
-    <p><strong>Ha nekem kell módosítanom</strong></p>
-    <p>Ha váratlan okból én nem tudom megtartani az időpontodat, a lehető leghamarabb értesítelek, és új időpontot ajánlok.</p>
-    <p style="margin-top:0.8rem;">Köszönöm, hogy figyelsz a lefoglalt időpontra – várlak szeretettel!<br><strong>Petra</strong><br>HARMAT BEAUTY by Petra</p>
+    <h4 data-i18n="footer_booking_title">Foglalási és lemondási feltételek</h4>
+    <p><strong data-i18n="footer_booking_h_appointment">Időpontfoglalás</strong></p>
+    <p data-i18n="footer_booking_p1">Kezelésre a foglaló alkalmazáson keresztül tudsz időpontot kérni. A foglalás akkor végleges, amikor megkapod róla a visszaigazolást. Kérlek, olyan elérhetőséget adj meg, amelyen szükség esetén kapcsolatba tudok lépni veled.</p>
+    <p data-i18n="footer_booking_p2">Ha nem tudod, melyik kezelés lenne megfelelő számodra, írj nekem foglalás előtt, és segítek választani. Az első alkalommal a kezelés megkezdése előtt átbeszéljük a bőröd állapotát és az esetleges ellenjavallatokat. Ha a választott kezelés nem lenne megfelelő, közösen egyeztetünk más lehetőségről.</p>
+    <p><strong data-i18n="footer_booking_h_cancel">Időpont módosítása és lemondása</strong></p>
+    <p data-i18n="footer_booking_p3">Ha mégsem jó az időpontod, kérlek, lehetőség szerint <strong>legalább 24 órával a kezelés előtt</strong> módosítsd vagy mondd le a foglaló alkalmazásban, vagy jelezd nekem a <a href="tel:+36308179093">+36 30 817 9093</a> telefonszámon. Így az időpontot más vendég számára is elérhetővé tudom tenni.</p>
+    <p data-i18n="footer_booking_p4">Ha megbetegszel vagy váratlan helyzet adódik, kérlek, akkor is szólj, amint tudsz. A lemondásért jelenleg nem számítok fel díjat.</p>
+    <p><strong data-i18n="footer_booking_h_late">Késés</strong></p>
+    <p data-i18n="footer_booking_p5">Ha késel, kérlek, jelezd telefonon. A következő vendég időpontja miatt előfordulhat, hogy a kezelés idejét rövidítenünk kell, vagy új időpontot szükséges egyeztetnünk. Erről minden esetben egyeztetünk.</p>
+    <p><strong data-i18n="footer_booking_h_change">Ha nekem kell módosítanom</strong></p>
+    <p data-i18n="footer_booking_p6">Ha váratlan okból én nem tudom megtartani az időpontodat, a lehető leghamarabb értesítelek, és új időpontot ajánlok.</p>
+    <p style="margin-top:0.8rem;"><span data-i18n="footer_booking_closing">Köszönöm, hogy figyelsz a lefoglalt időpontra – várlak szeretettel!</span><br><strong>Petra</strong><br>HARMAT BEAUTY by Petra</p>
+</div>
+</div>
+<div class="footer-impresszum">
+<button class="impresszum-toggle" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">
+    <span data-i18n="footer_cookie_btn">Cookie &amp; Adatkezelési tájékoztató</span> <i class="fa-solid fa-chevron-down"></i>
+</button>
+<div class="impresszum-body">
+    <h4 data-i18n="footer_cookie_title">Cookie &amp; Adatkezelési tájékoztató</h4>
+
+    <p><strong data-i18n="footer_cookie_h_controller">Az adatkezelő</strong></p>
+    <p><span data-i18n="footer_cookie_controller_p">Solti-Porszász Petra egyéni vállalkozó („HARMAT BEAUTY by Petra")</span><br>
+    E-mail: <a href="mailto:harmatbeautypetra@gmail.com">harmatbeautypetra@gmail.com</a> &nbsp;·&nbsp; Tel.: <a href="tel:+36308179093">+36 30 817 9093</a></p>
+
+    <p><strong data-i18n="footer_cookie_h_necessary">Szükséges sütik</strong></p>
+    <p data-i18n="footer_cookie_necessary_p">A weboldal helyes működéséhez elengedhetetlen sütiket minden esetben alkalmazunk. Ide tartozik a nyelvi beállítás (<code>hb_lang</code>, <code>hb_lang_v2</code>) és a cookie-hozzájárulás (<code>hb_cookie_consent</code>) tárolása. Ezek a böngésző localStorage-ban kerülnek mentésre, személyes adatot nem tartalmaznak, és a böngészőadatok törlésekor automatikusan megszűnnek.</p>
+
+    <p><strong data-i18n="footer_cookie_h_analytics">Statisztikai sütik (Google Analytics 4)</strong></p>
+    <table style="width:100%; border-collapse:collapse; font-size:0.78rem; color:rgba(229,223,211,0.65); margin-top:0.4rem;">
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.08);">
+            <td style="padding:0.4rem 0.6rem 0.4rem 0; font-weight:600; color:#e5dfd3; white-space:nowrap;" data-i18n="footer_cookie_col_name">Cookie neve</td>
+            <td style="padding:0.4rem 0;"><code>_ga</code>, <code>_ga_P7LZZRL57Z</code></td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.08);">
+            <td style="padding:0.4rem 0.6rem 0.4rem 0; font-weight:600; color:#e5dfd3; white-space:nowrap;" data-i18n="footer_cookie_col_provider">Szolgáltató</td>
+            <td style="padding:0.4rem 0;" data-i18n="footer_cookie_provider_val">Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Írország</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.08);">
+            <td style="padding:0.4rem 0.6rem 0.4rem 0; font-weight:600; color:#e5dfd3; white-space:nowrap;" data-i18n="footer_cookie_col_purpose">Cél</td>
+            <td style="padding:0.4rem 0;" data-i18n="footer_cookie_purpose_val">Névtelen látogatói statisztikák gyűjtése: megtekintett oldalak, munkamenet hossza, forgalmi forrás. Személyes adat (név, e-mail, egészségügyi adat, felhasználói azonosító) nem kerül a Google felé továbbításra.</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.08);">
+            <td style="padding:0.4rem 0.6rem 0.4rem 0; font-weight:600; color:#e5dfd3; white-space:nowrap;" data-i18n="footer_cookie_col_retention">Megőrzés</td>
+            <td style="padding:0.4rem 0;" data-i18n="footer_cookie_retention_val"><code>_ga</code> — 2 év &nbsp;·&nbsp; <code>_ga_*</code> — 2 év</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.08);">
+            <td style="padding:0.4rem 0.6rem 0.4rem 0; font-weight:600; color:#e5dfd3; white-space:nowrap;" data-i18n="footer_cookie_col_legal">Jogalap</td>
+            <td style="padding:0.4rem 0;" data-i18n="footer_cookie_legal_val">Hozzájárulás — GDPR 6. cikk (1) bek. a) pont</td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(255,255,255,0.08);">
+            <td style="padding:0.4rem 0.6rem 0.4rem 0; font-weight:600; color:#e5dfd3; white-space:nowrap;" data-i18n="footer_cookie_col_transfer">Adattovábbítás</td>
+            <td style="padding:0.4rem 0;" data-i18n="footer_cookie_transfer_val">USA — Google LLC, standard szerződéses záradékok (SCC) alapján</td>
+        </tr>
+        <tr>
+            <td style="padding:0.4rem 0.6rem 0.4rem 0; font-weight:600; color:#e5dfd3; white-space:nowrap;" data-i18n="footer_cookie_col_withdraw">Hozzájárulás visszavonása</td>
+            <td style="padding:0.4rem 0;" data-i18n="footer_cookie_withdraw_val">Bármikor, az oldal láblécében található „Cookie beállítások" linkre kattintva. Visszavonás esetén a statisztikai sütik azonnal törlődnek.</td>
+        </tr>
+    </table>
+
+    <p style="margin-top:1rem;"><strong data-i18n="footer_cookie_h_rights">Érintetti jogok</strong></p>
+    <p data-i18n="footer_cookie_rights_p">A GDPR alapján jogod van hozzáférni az adataidhoz, kérni azok törlését, hordozhatóságát, valamint panaszt tenni a Nemzeti Adatvédelmi és Információszabadság Hatóságnál (NAIH, <a href="https://www.naih.hu" target="_blank" rel="noopener noreferrer">www.naih.hu</a>). Adatkezeléssel kapcsolatos kérdésekkel fordulj hozzám az <a href="mailto:harmatbeautypetra@gmail.com">harmatbeautypetra@gmail.com</a> címen.</p>
+
+    <p style="margin-top:0.8rem; font-size:0.75rem; color:rgba(229,223,211,0.4);" data-i18n="footer_cookie_updated">Utolsó frissítés: 2025. január</p>
 </div>
 </div>
 </div>
 <div class="footer-copy">
 <p>&copy; <span id="currentYear"></span> <span data-i18n="footer_rights">HARMAT BEAUTY by Petra. Minden jog fenntartva.</span></p>
+<p style="margin-top:0.6rem;">
+  <a href="#" class="hb-cookie-settings-link hb-open-cookie-settings"><i class="fa-solid fa-cookie-bite"></i> Cookie beállítások</a>
+</p>
 </div>
 </div>
 </footer>
+
+<!-- Cookie Consent Banner -->
+<div id="hb-cookie-banner" hidden aria-live="polite" role="region" aria-label="Cookie hozzájárulás">
+  <div class="hb-cookie-inner">
+
+    <!-- Simple view -->
+    <div id="hb-cookie-simple">
+      <p class="hb-cookie-text"><strong data-i18n="cookie_title">Sütik (cookie-k) kezelése</strong><br>
+        <span data-i18n="cookie_intro">Az oldal működéséhez szükséges sütiket minden esetben használjuk. Statisztikai célú (Google Analytics) sütiket csak a te hozzájárulásoddal alkalmazunk — személyes adatot (nevet, e-mail-t, egészségügyi adatot) nem küldünk.</span></p>
+      <div class="hb-cookie-actions">
+        <button id="hb-btn-accept" class="hb-btn hb-btn-primary" data-i18n="cookie_btn_accept">Összes elfogadása</button>
+        <button id="hb-btn-reject" class="hb-btn hb-btn-outline" data-i18n="cookie_btn_reject">Csak szükségesek</button>
+        <button id="hb-btn-settings" class="hb-btn hb-btn-outline" data-i18n="cookie_btn_settings">Beállítások</button>
+      </div>
+    </div>
+
+    <!-- Detail / settings view -->
+    <div id="hb-cookie-detail" hidden>
+      <p class="hb-detail-title" data-i18n="cookie_settings_title">Cookie beállítások</p>
+      <p class="hb-detail-desc" data-i18n="cookie_settings_desc">Az alábbi kategóriák közül választhatod ki, melyeket engedélyezed. A szükséges sütik nem kapcsolhatók ki.</p>
+
+      <!-- Necessary cookies (always on) -->
+      <div class="hb-cookie-row">
+        <div class="hb-cookie-row-info">
+          <strong data-i18n="cookie_necessary_title">Szükséges sütik</strong>
+          <span data-i18n="cookie_necessary_desc">A weboldal helyes működéséhez elengedhetetlen sütik (pl. nyelvi beállítás, cookie-hozzájárulás tárolása). Személyes adatot nem rögzítenek.</span>
+        </div>
+        <span class="hb-always-on" data-i18n="cookie_always_on">Mindig bekapcsolt</span>
+      </div>
+
+      <!-- Analytics cookies (opt-in) -->
+      <div class="hb-cookie-row">
+        <div class="hb-cookie-row-info">
+          <strong data-i18n="cookie_analytics_title">Statisztikai sütik (Google Analytics)</strong>
+          <span data-i18n="cookie_analytics_desc">Névtelen látogatói statisztikák gyűjtése (Google Analytics 4). Segítenek megérteni, hogyan használják a látogatók az oldalt. Nevet, e-mail-t vagy egyéb személyes adatot nem küldenek a Google felé.</span>
+        </div>
+        <div class="hb-toggle-wrap">
+          <label class="hb-toggle" aria-label="Statisztikai sütik engedélyezése">
+            <input type="checkbox" id="hb-analytics-toggle">
+            <span class="hb-toggle-track"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="hb-detail-footer">
+        <button id="hb-btn-withdraw" class="hb-btn hb-btn-outline" data-i18n="cookie_btn_withdraw">Hozzájárulás visszavonása</button>
+        <button id="hb-btn-back" class="hb-btn hb-btn-outline" data-i18n="cookie_btn_back">Vissza</button>
+        <button id="hb-btn-save" class="hb-btn hb-btn-primary" data-i18n="cookie_btn_save">Mentés</button>
+      </div>
+      <p id="hb-withdraw-confirm" hidden data-i18n="cookie_withdraw_confirm">✓ Hozzájárulásod visszavontuk, és az analitikai sütiket töröltük.</p>
+    </div>
+
+  </div>
+</div>
+
 <!-- JavaScript Translations & App Logic -->
 <script src="translations.js"></script>
 <script src="app.js"></script>
