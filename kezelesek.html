@@ -228,6 +228,10 @@
     font-weight: 700;
     color: #142820;
 }
+#alap-tisztito .services-list-grid,
+#premium-antiaging .services-list-grid {
+    grid-template-columns: minmax(0, 1fr);
+}
 </style>
 </head>
 <body>
@@ -297,23 +301,487 @@
 </svg>
 </div>
 </section>
-
 <!-- Detail Content Section -->
 <section class="treatment-detail-section">
 <div class="container">
 
-<div style="max-width: 640px; margin: 3rem auto; text-align: center; background: #ffffff; border-radius: 16px; padding: 3rem 2.5rem; box-shadow: 0 4px 24px rgba(0,0,0,0.06); border: 1px solid rgba(140,91,62,0.15);">
-  <img src="drop-logo.png.png" alt="" style="width: 80px; height: auto; margin-bottom: 1.2rem; filter: brightness(0) saturate(100%) invert(92%) sepia(8%) saturate(350%) hue-rotate(10deg) brightness(96%);">
-  <h2 style="font-family: var(--font-heading); font-size: clamp(1.4rem, 3vw, 1.9rem); font-weight: 700; color: #142820; margin-bottom: 1.5rem;" data-i18n="treatments_soon_title">Hamarosan minden részlet a helyére kerül</h2>
-  <p style="font-size: 1rem; color: #553b25; line-height: 1.8; margin-bottom: 0.5rem;" data-i18n="treatments_soon_p1">Már készülök, hogy személyre szabott kezelésekkel és egy kis énidővel várhassalak. A kezelések részletes leírását és az árlistát hamarosan itt is megtalálod.</p>
-  <p style="font-size: 1rem; color: #553b25; line-height: 1.8; margin-bottom: 1.8rem;" data-i18n="treatments_soon_p2">Nézz vissza később, szeretettel várlak!</p>
-  <p style="font-size: 1rem; font-weight: 600; color: #142820;">Petra</p>
-</div>
+<div class="treatment-detail-block" id="alap-tisztito">
+  <div class="detail-block-header">
+    <h2 class="detail-block-title"><i class="fa-solid fa-spa" aria-hidden="true"></i> <span data-i18n="catalog_category_1">Alap- és Mélytisztító Kezelések</span></h2>
+  </div>
+  <p class="detail-block-desc" data-i18n="catalog_category_1_intro">Fedezd fel a személyre szabott arckezelések és a professzionális bőrápolás világát, ahol a bőr egészsége, a feltöltődés és a természetes szépség kerül a középpontba, hogy bőröd és te is ragyoghass.</p>
+  <div class="services-list-grid">
 
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_0_name">Személyre szabott bőrkonzultáció és bőrállapot-felmérés</h3>
+          <span class="service-item-duration" data-i18n="catalog_0_duration">40 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_0_desc">A szép és egészséges bőr felé vezető út a megértéssel kezdődik. Hiszem, hogy minden bőr egyedi, ezért a megfelelő ápolás első lépése, hogy megismerjük a működését, az igényeit és azokat a tényezőket, amelyek hatással vannak az állapotára.<br><br>Ha még nem jártál nálam arckezelésen, ezzel az alkalommal kezdjük a közös munkát.<br><br>A találkozónk előtt egy részletes kérdőívet küldök neked, majd személyesen átbeszéljük a bőröd jelenlegi állapotát, a céljaidat, az életmódodat és az általad használt kozmetikumokat.<br><br>Az alapos bőrállapot-felmérés során együtt feltérképezzük, mire van valóban szüksége a bőrödnek. Nem sablonmegoldásokban gondolkodom: olyan kezelési és otthonápolási tervet állítok össze, amely a bőröd igényeihez és a mindennapjaidhoz is igazodik.<br><br>A konzultáció végén a javasolt otthonápolási rutinhoz illeszkedő mini termékeket is kapsz, hogy saját bőrödön próbálhasd ki őket, mielőtt teljes kiszerelésű termékek mellett döntenél.<br><br>A konzultációt követő 48 órán belül elküldöm a személyre szabott kezelési javaslatodat és otthonápolási útmutatódat.<br><br>Egy hét múlva e-mailben újra jelentkezem, hogy átbeszéljük a kipróbált termékekkel kapcsolatos tapasztalataidat: hogyan reagált rájuk a bőröd, mennyire volt kényelmes a használatuk, és hogyan érezted magad az új rutinnal. A visszajelzéseid alapján szükség esetén finomhangoljuk az otthoni ápolást.<br><br>A konzultáció teljes díját levonom az első nálam igénybe vett arckezelésed árából, amennyiben arra a konzultációt követő 60 napon belül sor kerül.<br><br>A célom nem csupán az, hogy szebb legyen a bőröd, hanem hogy te is jobban megértsd, mire és miért van szüksége. Hiszen a tudatos bőrápolás nem a minél több termékről, hanem a megfelelő választásokról szól.</p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">12 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_1_name">Express Facial</h3>
+          <span class="service-item-duration" data-i18n="catalog_1_duration">40 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_1_desc">Ez az expressz arckezelés ideális választás azok számára, akiknek kevés idejük van, mégis szeretnék megadni bőrüknek az alapvető regeneráló és ápoló lépéseket. A kezelés mélytisztító pórustisztítással, gyengéd hámlasztással kezdődik, intenzíven hidratáló és tápláló maszk alkalmazásával folytatódik, majd feszesítő szemkörnyékápoló szérummal, peptid alapú hidratálóval és fényvédelemmel zárul. Rövid idő alatt látványos frissességet, hidratáltságot és ragyogó megjelenést biztosít.</p>
+        <p class="service-item-body"><strong data-i18n="catalog_skin_label">Bőrtípus:</strong> <span data-i18n="catalog_1_skin">minden bőrtípusra</span></p>
+        <p class="service-item-body"><strong data-i18n="catalog_benefits_label">Jótékony hatásai:</strong> <span data-i18n="catalog_1_benefits">hámlasztó, hidratáló, halványító</span></p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">25 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_2_name">Ever Green Tea</h3>
+          <span class="service-item-duration" data-i18n="catalog_2_duration">55 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_2_desc">Ez a kezelés gyengéd hámlasztó technológiákat alkalmaz, miközben antioxidánsokkal támogatja a bőr védekezőképességét. A kaolinanyag és a kamillakivonat hatékonyan méregteleníti, mattítja és megnyugtatja a bőrt, miközben erősíti annak természetes immunfunkcióit. A kezelés során alkalmazott nyugtató növényi hatóanyagok elősegítik a bőr regenerációját, kiegyensúlyozottságát és általános egészségi állapotának javulását.</p>
+        <p class="service-item-body"><strong data-i18n="catalog_skin_label">Bőrtípus:</strong> <span data-i18n="catalog_2_skin">pattanásos, érzékeny, öregedő</span></p>
+        <p class="service-item-body"><strong data-i18n="catalog_benefits_label">Jótékony hatásai:</strong> <span data-i18n="catalog_2_benefits">hámlasztó, antioxidáns, hidratáló, nyugtató</span></p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">25 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_3_name">Ever Green Tea + tisztítás</h3>
+          <span class="service-item-duration" data-i18n="catalog_3_duration">70 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_3_desc">Ez a kezelés gyengéd hámlasztó technológiákat alkalmaz, miközben antioxidánsokkal támogatja a bőr védekezőképességét. A kaolinanyag és a kamillakivonat hatékonyan méregteleníti, mattítja és megnyugtatja a bőrt, miközben erősíti annak természetes immunfunkcióit. A kezelés során alkalmazott nyugtató növényi hatóanyagok elősegítik a bőr regenerációját, kiegyensúlyozottságát és általános egészségi állapotának javulását.</p>
+        <p class="service-item-body"><strong data-i18n="catalog_skin_label">Bőrtípus:</strong> <span data-i18n="catalog_3_skin">pattanásos, érzékeny, öregedő</span></p>
+        <p class="service-item-body"><strong data-i18n="catalog_benefits_label">Jótékony hatásai:</strong> <span data-i18n="catalog_3_benefits">hámlasztó, antioxidáns, hidratáló, nyugtató</span></p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">30 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_4_name">Clarifying Acne</h3>
+          <span class="service-item-duration" data-i18n="catalog_4_duration">90 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_4_desc">Ez a célzott korrekciós arckezelés serkenti a bőr megújulását, miközben hatékonyan eltávolítja a szaruképződés során felhalmozódott keratint, ezzel csökkentve a komedók és aknés elváltozások kialakulásának esélyét. A kezelés zárásaként alkalmazott gyulladáscsökkentő aktív szén-tejmaszk kaolintartalmával felszívja a felesleges faggyút és szennyeződéseket, míg a bambusszén természetes méregtelenítőként hat. A benne található innovatív, gyulladt bőrre is biztonságosan alkalmazható PHA-sav gyengéd hámlasztás biztosít, nyugtatva és tisztítva az irritált, problémás bőrt. Az eredmény: egy tiszta, kiegyensúlyozott és megnyugodott bőrképlet.</p>
+        <p class="service-item-body"><strong data-i18n="catalog_skin_label">Bőrtípus:</strong> <span data-i18n="catalog_4_skin">minden bőrtípus, öregedő, pattanásos, érzékeny</span></p>
+        <p class="service-item-body"><strong data-i18n="catalog_benefits_label">Jótékony hatásai:</strong> <span data-i18n="catalog_4_benefits">hámlasztó, antibakteriális, tisztító, nyugtató, antioxidáns, gyulladáscsökkentő</span></p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">30 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_5_name">Gentlemen’s Cooling</h3>
+          <span class="service-item-duration" data-i18n="catalog_5_duration">50 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_5_desc">Ez a célzott arckezelés kifejezetten a férfi bőr speciális igényeire lett kifejlesztve, ötvözve a peptidek, növényi őssejtek és kíméletes, mégis hatékony hámlasztó összetevők erejét. A kezelés során mélytisztítást, sejtmegújító hatóanyag-bevitelt és intenzív hidratáló maszkot alkalmazunk. Revitalizálja és felfrissíti a bőrt, javítja annak tónusát és textúráját, miközben támogatja az egészséges, ápolt megjelenést.</p>
+        <p class="service-item-body"><strong data-i18n="catalog_skin_label">Bőrtípus:</strong> <span data-i18n="catalog_5_skin">minden bőrtípus, öregedő, érzékeny</span></p>
+        <p class="service-item-body"><strong data-i18n="catalog_benefits_label">Jótékony hatásai:</strong> <span data-i18n="catalog_5_benefits">hámlasztó, hidratáló, tisztító, antioxidáns, gyulladáscsökkentő</span></p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">30 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+  </div>
+</div>
+<div class="treatment-detail-block" id="premium-antiaging">
+  <div class="detail-block-header">
+    <h2 class="detail-block-title"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i> <span data-i18n="catalog_category_2">Prémium Bőrmegújítás &amp; Healthy Aging</span></h2>
+  </div>
+  <p class="detail-block-desc" data-i18n="catalog_category_2_intro">Kezelések, melyek nem csupán a bőr megújítását szolgálják, hanem a kötőszövet, az arcizmok és az idegrendszer harmonizálásán keresztül támogatják a szépség természetes egyensúlyát.</p>
+  <div class="services-list-grid">
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_6_name">Firming Peptide</h3>
+          <span class="service-item-duration" data-i18n="catalog_6_duration">70 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_6_desc">Ez a fejlett liftinghatású kezelés célzottan támogatja a bőr sejtmegújulását, ötvözve a nagy hatékonyságú anti-aging peptidek, antioxidánsok, növényi őssejtek és fitokivonatok erejét. A bőr intelligens hatóanyag-komplexekkel töltődik fel, amelyek serkentik a sejtek regenerációját, javítják a bőr struktúráját és elősegítik a feszesebb, ragyogóbb megjelenést. A kezelés minden bőrtípus számára ideális, különösen a fáradt, érett vagy környezeti stressz által terhelt arcbőr megújítására.</p>
+        <p class="service-item-body"><strong data-i18n="catalog_skin_label">Bőrtípus:</strong> <span data-i18n="catalog_6_skin">minden bőrtípus, öregedő</span></p>
+        <p class="service-item-body"><strong data-i18n="catalog_benefits_label">Jótékony hatásai:</strong> <span data-i18n="catalog_6_benefits">feszesítő, emelő, simító, halványító, antioxidáns</span></p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">35 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_7_name">Circadia Summer Cooling</h3>
+          <span class="service-item-duration" data-i18n="catalog_7_duration">60 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_7_desc">Ez a fiatalító nyári arckezelés hűsítő, gyulladáscsökkentő tisztítással indul, amely azonnal enyhíti a bőrpírt és felfrissíti a bőrt. A kezelés során alkalmazott hóalga- és spirulina kivonatok kiváló regeneráló és tápanyagpótló tulajdonságaikról ismertek – támogatják a sejtszintű megújulást és helyreállítják a környezeti stressz által károsodott bőrt. A hűsítő maszkot egy malachit ásványban gazdag, cirkadián ritmus optimalizáló maszkkal kombináljuk, amely támogatja a bőr természetes regenerációs folyamatait, méregtelenít és hozzájárul a feszesebb, fiatalosabb arcbőr kialakításához.</p>
+        <p class="service-item-body"><strong data-i18n="catalog_skin_label">Bőrtípus:</strong> <span data-i18n="catalog_7_skin">minden bőrtípus, öregedő, érzékeny, dehidratált, sérült</span></p>
+        <p class="service-item-body"><strong data-i18n="catalog_benefits_label">Jótékony hatásai:</strong> <span data-i18n="catalog_7_benefits">öregedésgátló, antioxidáns, hidratáló, helyreállító, nyugtató</span></p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">35 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_8_name">Dream Facial</h3>
+          <span class="service-item-duration" data-i18n="catalog_8_duration">60 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_8_desc">Ez a luxus arckezelés teljes testi-lelki megújulást kínál, harmonizálva a bőr működését a cirkadián ritmushoz igazodva. A nyugtató zene, finom rezgések és kényeztető masszázstechnikák mély relaxációt biztosítanak, miközben a pre- és postbiotikumokban, ásványi anyagokban és hatóanyagokban gazdag formulák támogatják a bőr egyensúlyának helyreállítását és természetes regenerációját. A malachit ásványi kivonattal dúsított időkiegyensúlyozó maszk méregtelenít, nyugtat és védi a bőrt a külső stresszhatásokkal szemben. A kezelés részeként alkalmazott Gua Sha és hűsítő jéggömb masszázs fokozza a mikrokeringést, frissíti a bőrt, valamint elősegíti a tónus és feszesség helyreállítását. A kezelés végére a bőr láthatóan simább, hidratáltabb és fiatalosabb megjelenésű, miközben a vendég a belső harmónia érzésével távozik.</p>
+        <p class="service-item-body"><strong data-i18n="catalog_skin_label">Bőrtípus:</strong> <span data-i18n="catalog_8_skin">minden bőrtípus</span></p>
+        <p class="service-item-body"><strong data-i18n="catalog_benefits_label">Jótékony hatásai:</strong> <span data-i18n="catalog_8_benefits">kiegyensúlyozó, hidratáló, fiatalító, relaxáló</span></p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">40 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_9_name">Luxe Lift Facial</h3>
+          <span class="service-item-duration" data-i18n="catalog_9_duration">60 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_9_desc">A Luxe Lift arckezelés azonnali feszesítő és ragyogásfokozó hatást nyújt. Látványosan javítja a bőr rugalmasságát, miközben csökkenti a finom vonalakat és ráncokat. A kezelés során alkalmazott, magas hatóanyagtartalmú formulák sejtszinten stimulálják a kollagén- és elasztintermelést, így biztosítva a hosszan tartó bőrszerkezeti javulást és a fiatalos megjelenést.</p>
+        <p class="service-item-body"><strong data-i18n="catalog_skin_label">Bőrtípus:</strong> <span data-i18n="catalog_9_skin">öregedő, hiperpigmentált</span></p>
+        <p class="service-item-body"><strong data-i18n="catalog_benefits_label">Jótékony hatásai:</strong> <span data-i18n="catalog_9_benefits">feszesítő, halványító, hámlasztó, antioxidáns, öregedésgátló</span></p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">45 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_10_name">SWICH</h3>
+          <span class="service-item-duration" data-i18n="catalog_10_duration">70 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_10_desc">A SWICH bőrfiatalító rendszer a kémiai hámlasztás korszerű alternatívája, amely új megközelítést kínál az öregedés jeleinek kezelésében. Ez az innovatív eljárás a bőr természetes regenerációs folyamataira épít, anélkül hogy felszíni sérülést vagy hámlást idézne elő. A kezelés belülről stimulálja a sejtműködést, támogatva a bőrmegújulást és az egészséges, fiatalos megjelenés visszaállítását. A SWICH ideális választás azok számára, akik szeretnék visszafordítani a bőröregedés látható jeleit, miközben megőrzik a bőr integritását és komfortérzetét.</p>
+        <p class="service-item-body"><strong data-i18n="catalog_skin_label">Bőrtípus:</strong> <span data-i18n="catalog_10_skin">minden bőrtípus, öregedő, hiperpigmentált, 35+</span></p>
+        <p class="service-item-body"><strong data-i18n="catalog_benefits_label">Jótékony hatásai:</strong> <span data-i18n="catalog_10_benefits">hámlasztó, halványító, öregedésgátló</span></p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">60 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_11_name">C2O2 Facial</h3>
+          <span class="service-item-duration" data-i18n="catalog_11_duration">50 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_11_desc">Az Oxygen RX arckezelés intenzív oxigénellátással támogatja a bőr megújulását: serkenti a mikrokeringést, fokozza a sejtek oxigén- és tápanyagfelvételét, így javítva a bőr vitalitását, ragyogását és egységes tónusát. A kezelés során alkalmazott faszén-tejmaszk gyengéd hámlasztással és mélytisztítással távolítja el a szennyeződéseket, míg a bambusszén hatékonyan méregtelenít. Az olívaszkvalán intenzíven hidratál és erősíti a bőr védőrétegét. A C2O2 kezelés ideális választás nem csak zsíros, problémás bőrre, hanem minden bőrtípusra, amelynek szüksége van felfrissítésre, mélytisztításra és revitalizálásra.</p>
+        <p class="service-item-body"><strong data-i18n="catalog_skin_label">Bőrtípus:</strong> <span data-i18n="catalog_11_skin">minden bőrtípus, öregedő, pattanásos (hormonális is), érzékeny</span></p>
+        <p class="service-item-body"><strong data-i18n="catalog_benefits_label">Jótékony hatásai:</strong> <span data-i18n="catalog_11_benefits">hámlasztó, halványító, antioxidáns, gyulladáscsökkentő, antibakteriális, nyugtató</span></p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">60 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_12_name">Fasciális Arcterápia</h3>
+          <span class="service-item-duration" data-i18n="catalog_12_duration">60 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_12_desc">A fasciális arcterápia az arc kötőszöveti kapcsolataira figyelő, kézzel végzett masszázstechnika, amely a személyre szabott bőrápolást mély ellazulással kapcsolja össze. Nem csak a bőrrel, hanem az arc finom kötőszöveti rétegeivel is kapcsolatba lépünk, amelyek nagy szerepet játszanak a bőr tónusában, rugalmasságában és összharmóniájában.<br><br>A fasciarendszer a testünket átszövő kötőszövetes hálózat. Az arcon a bőr, a bőr alatti zsírszövet és a mimikai izmok között is találhatók ilyen kapcsolatok (és a testben mindenhol). Állapota közvetlenül hat az izomtónusra, a keringésre és oxigenizációra, a nyirokelvezetésre, a bőr rugalmasságára és regenerációjára, valamint az arcvonalak, mimikai terhelések és feszültségminták kialakulására.<br><br>Lassú, megtartott, finoman elmozdító fogásokat alkalmazok, az érintés erősségét és ritmusát hozzád igazítva. A masszázs segít enyhíteni az arcban érzett feszültséget, és élénkíti a mikrokeringést és a szövetek oxigén ellátottságát. Aktiválódnak a bőr természetes regeneráló folyamatai és a vonások lágyabbnak, a mimikai ráncok kevésbé hangsúlyosnak tűnnek, az arc fellélegzik és kipihentebb benyomást kelt.<br><br>A kezelés élménye a közérzetedre is kihat. A mindennapi készenlétben a vegetatív idegrendszer szimpatikus ága kap fontos szerepet, míg a paraszimpatikus működés többek között a pihenéshez és az emésztéshez kapcsolódik. A kezelés segít lecsendesedni. Miközben az arcodon dolgozom, észreveheted, hogy leengedted a vállad, elengedted az állkapcsod, és végre kényelmesen megpihentél.<br><br>A HARMAT-ban a kezelés arctisztítással és a bőrödhöz választott peelinggel kezdődik. Ezt követi a szérummal végzett fasciális arcmasszázs, majd célzott hatóanyagos szérum, pakolás és befejező arckrém teszi teljessé az ápolást.<br><br>Szeretettel ajánlom, ha üdébb bőrre, pihentebb arckifejezésre és egy igazán feltöltő, tűmentes arckezelésre vágysz. 🌿</p>
+        <p class="service-item-body"><strong data-i18n="catalog_skin_label">Bőrtípus:</strong> <span data-i18n="catalog_12_skin">minden bőrtípus</span></p>
+        <p class="service-item-body"><strong data-i18n="catalog_benefits_label">Jótékony hatásai:</strong> <span data-i18n="catalog_12_benefits">kötőszöveti feszülés oldása, mikrokeringés és oxigenizáció fokozása, feszültségoldás, regeneráció, relaxáció</span></p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">30 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+  </div>
+</div>
+<div class="treatment-detail-block" id="kiegeszito-gyantazas">
+  <div class="detail-block-header">
+    <h2 class="detail-block-title"><i class="fa-solid fa-eye" aria-hidden="true"></i> <span data-i18n="catalog_category_3">Kiegészítő Szolgáltatások &amp; Gyantázás</span></h2>
+  </div>
+  <p class="detail-block-desc" data-i18n="catalog_category_3_intro">Az apró részletek teszik teljessé az összképet. Gyantázási, szempilla- és szemöldökstyling szolgáltatásaim a természetes szépség finom kiemelésére, az arc harmóniájának megőrzésére és az igényes, ápolt megjelenés megteremtésére fókuszálnak. Csomagkedvezmény: szempilla + szemöldök vagy 2 testtáj gyantázás esetén 10%</p>
+  <div class="services-list-grid">
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_13_name">Szemöldök styling</h3>
+          <span class="service-item-duration" data-i18n="catalog_13_duration">30 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_13_desc">Egyéni karakterhez tervezett formázás csipesszel vagy kíméletes gyantával.</p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">7 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_14_name">Szemöldök styling + festés</h3>
+          <span class="service-item-duration" data-i18n="catalog_14_duration">50 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_14_desc">Egyéni karakterhez tervezett formázás csipesszel vagy kíméletes gyantával és festés hennával vagy hibrid festékkel a természetes hatás érdekében.</p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">10 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_15_name">Szemöldök styling + laminálás</h3>
+          <span class="service-item-duration" data-i18n="catalog_15_duration">50 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_15_desc">Egyéni karakterhez tervezett formázás csipesszel vagy kíméletes gyantával és tartós szálrendezés.</p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">13 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_16_name">Szemöldök styling + laminálás + festés</h3>
+          <span class="service-item-duration" data-i18n="catalog_16_duration">70 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_16_desc">Egyéni karakterhez tervezett formázás csipesszel vagy kíméletes gyantával, tartós szálrendezés és festés hennával vagy hibrid festékkel a természetes hatás érdekében.</p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">16 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_17_name">Szempillafestés</h3>
+          <span class="service-item-duration" data-i18n="catalog_17_duration">30 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_17_desc">A saját szempillák színének mélyítése, hangsúlyosabb tekintet.</p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">5 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_18_name">Koreai szempilla lifting</h3>
+          <span class="service-item-duration" data-i18n="catalog_18_duration">60 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_18_desc">A természetes pillák ívelése, szempillaépítés nélkül</p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">13 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_19_name">Koreai szempilla lifting + festés</h3>
+          <span class="service-item-duration" data-i18n="catalog_19_duration">70 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_19_desc">Íveltebb, sötétebb pillák, szempillaspirál nélküli hangsúlyos hatás</p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">16 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_20_name">Alkar gyanta</h3>
+          <span class="service-item-duration" data-i18n="catalog_20_duration">30 perc</span>
+        </div>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">5 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_21_name">Bajusz gyanta</h3>
+          <span class="service-item-duration" data-i18n="catalog_21_duration">15 perc</span>
+        </div>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">3 500 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_22_name">Bikinivonal gyanta</h3>
+          <span class="service-item-duration" data-i18n="catalog_22_duration">30 perc</span>
+        </div>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">4 500 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_23_name">Hónalj gyanta</h3>
+          <span class="service-item-duration" data-i18n="catalog_23_duration">30 perc</span>
+        </div>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">4 500 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_24_name">Comb gyanta</h3>
+          <span class="service-item-duration" data-i18n="catalog_24_duration">30 perc</span>
+        </div>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">5 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_25_name">Lábszár gyanta</h3>
+          <span class="service-item-duration" data-i18n="catalog_25_duration">30 perc</span>
+        </div>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">5 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+  </div>
+</div>
+<div class="treatment-detail-block" id="smink">
+  <div class="detail-block-header">
+    <h2 class="detail-block-title"><i class="fa-solid fa-paintbrush" aria-hidden="true"></i> <span data-i18n="catalog_category_4">Smink</span></h2>
+  </div>
+  <p class="detail-block-desc" data-i18n="catalog_category_4_intro">Professzionális sminkkészítés, amely kiemeli természetes szépségedet és harmonikusan igazodik egyéni stílusodhoz, hogy minden alkalommal magabiztosan ragyoghass.</p>
+  <div class="services-list-grid">
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_26_name">Nappali / Natúr "No-Makeup" Smink</h3>
+          <span class="service-item-duration" data-i18n="catalog_26_duration">60 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_26_desc">Friss, természetes és láthatatlan alapozás, finom árnyalás és ragyogó arcszín a mindennapi magabiztosságért.</p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">12 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_27_name">Alkalmi &amp; Esti Smink</h3>
+          <span class="service-item-duration" data-i18n="catalog_27_duration">90 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_27_desc">Tartós, kifejező smink fotózásra, eseményekre és ünnepekre műszempilla opcióval és prémium vízálló termékekkel.</p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">18 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_28_name">Menyasszonyi Smink</h3>
+          <span class="service-item-duration" data-i18n="catalog_28_duration">90 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_28_desc">Személyre szabott álomszép esküvői smink hosszan tartó rögzítéssel a nagy napra.</p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">32 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+    <article class="service-item-card">
+      <div>
+        <div class="service-item-head">
+          <h3 class="service-item-title" data-i18n="catalog_29_name">Menyasszonyi Próbasmink</h3>
+          <span class="service-item-duration" data-i18n="catalog_29_duration">120 perc</span>
+        </div>
+        <p class="service-item-body" data-i18n="catalog_29_desc">Személyre szabott álomszép esküvői smink előzetes konzultációval.</p>
+      </div>
+      <div class="service-item-foot">
+        <span class="service-item-price">35 000 Ft</span>
+        <a href="idopontfoglalas.html" class="btn btn-sm btn-booking-action" data-i18n="kez_btn_book">Foglalás</a>
+      </div>
+    </article>
+
+  </div>
+</div>
 </div>
 </section>
 </main>
-
 <!-- Footer -->
 <footer class="site-footer">
 <div class="container footer-container">

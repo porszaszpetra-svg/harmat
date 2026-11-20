@@ -2307,3 +2307,12 @@ ul {
     border-color: rgba(229, 223, 211, 0.5);
     color: #e5dfd3;
 }
+#kezelesek .treatments-grid > .treatment-card {
+    display: flex;
+    flex-direction: column;
+}
+
+#kezelesek .treatment-card > [data-i18n="home_treatment_details"] {
+    margin-top: auto;
+    align-self: flex-start;
+}
